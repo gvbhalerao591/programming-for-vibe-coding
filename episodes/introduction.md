@@ -1,3 +1,23 @@
+---
+title: "Course Description"
+teaching: 5
+exercises: 0
+---
+
+:::::::::::::::::::::::::::::::::::::: questions
+
+- Why do people using AI coding tools need foundational programming concepts?
+- Who is this course designed for?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Describe the motivation for the course.
+- Identify whether the course matches your goals and experience.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 # Course Description
 
 *Last edited: 22 September 2026*
@@ -19,3 +39,10 @@ Existing introductory programming courses largely assume that learners need to w
 ## Target Audience
 
 A researcher, research-support professional, student, or other domain expert who has little formal programming training but is already using or wants to use AI coding assistants to create scripts, analyses, automations, websites, dashboards, or small applications.
+
+:::::::::::::::::::::::::::::::::::::: keypoints
+
+- AI can generate code, but learners still need to specify, understand, evaluate, and improve what it produces.
+- This course focuses on transferable programming and software-development concepts rather than a single language or AI tool.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
