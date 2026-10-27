@@ -68,6 +68,7 @@ contact: 'rrox-steering@maillist.ox.ac.uk' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - 01-ideas-to-computational-problems.md
+- 03-Data-File-StructuredInfo.md
 
 # Information for Learners
 learners: 
