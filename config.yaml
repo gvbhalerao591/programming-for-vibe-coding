@@ -68,9 +68,7 @@ contact: 'rrox-steering@maillist.ox.ac.uk' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - 01-ideas-to-computational-problems.md
-- 02-What-AI-Is-Building.md
 - 03-Data-File-StructuredInfo.md
-- 04-How-Web-Applications-Work.md
 
 # Information for Learners
 learners: 
