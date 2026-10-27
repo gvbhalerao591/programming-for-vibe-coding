@@ -21,7 +21,7 @@ carpentry: 'incubator'
 title: 'First Principles of Programming for Vibe Coding' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 'Oct-2026' # FIXME
+created: '2026-10-27' # FIXME
 
 # Comma-separated list of keywords for the lesson
 keywords: 'AI, Coding, Programming, The Carpentries' # FIXME
@@ -35,7 +35,7 @@ life_cycle: 'pre-alpha' # FIXME
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries/workbench-template-md' # FIXME
+source: 'https://github.com/gvbhalerao591/programming-for-vibe-coding' # FIXME
 
 # Default branch of your lesson
 branch: 'main'
