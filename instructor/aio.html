@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: All in One View</title>
+<title>First Principles of Programming for Vibe Coding: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="../assets/styles.css">
 <script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><!-- NOTE: https://docs.mathjax.org/en/latest/output/mathml.html#mathml-support --><!-- Changes from V2 to V4: https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
@@ -103,7 +103,7 @@
       <img class="small-logo" alt="Carpentries Incubator" src="../assets/images/incubator-logo-sm.svg"></a>
     </div>
     <div class="lesson-title-md">
-      Lesson Title
+      First Principles of Programming for Vibe Coding
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -114,7 +114,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            First Principles of Programming for Vibe Coding
           </span>
         </li>
         <li class="nav-item">
@@ -245,7 +245,19 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using Markdown</a>
+        <a href="introduction.html">1. </a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="01-ideas-to-computational-problems.html">2. From Ideas to Computational Problems</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -328,194 +340,700 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>All in One View</h1>
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Using Markdown</a></p>
+<section id="aio-introduction"><p>Content from <a href="introduction.html"></a></p>
 <hr>
-<p>Last updated on 2025-07-11 |
+<p>Last updated on 2026-10-27 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+        <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<div class="section level1">
+<h1 id="course-description">Course Description<a class="anchor" aria-label="anchor" href="#course-description"></a>
+</h1>
+<p><em>Last edited: 22 September 2026</em></p>
+<div class="section level2">
+<h2 id="course-title">Course Title<a class="anchor" aria-label="anchor" href="#course-title"></a>
 </h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
+<p><strong>First Principles of Programming for Vibe Coding</strong></p>
 </div>
+<div class="section level2">
+<h2 id="central-problem">Central Problem<a class="anchor" aria-label="anchor" href="#central-problem"></a>
+</h2>
+<p>Generative AI has made it possible for people with little or no
+programming experience to produce code, but it has not given them the
+conceptual knowledge needed to reason about, specify, evaluate, debug,
+modify, and safely reuse that code.</p>
 </div>
+<div class="section level2">
+<h2 id="problem-statement">Problem Statement<a class="anchor" aria-label="anchor" href="#problem-statement"></a>
+</h2>
+<p>AI-assisted coding tools allow people with limited programming
+experience to generate increasingly sophisticated software, but these
+users often lack the foundational programming and software-development
+concepts needed to specify what they want, understand what has been
+generated, diagnose problems, evaluate solutions, and iteratively
+improve their software.</p>
+<p>Existing introductory programming courses largely assume that
+learners need to write code themselves and therefore devote substantial
+attention to language-specific syntax and implementation. Conversely,
+guidance on AI-assisted coding often focuses on prompting or particular
+AI tools. There is therefore a gap for tool- and language-agnostic
+training that teaches the minimum conceptual foundations of programming
+and software systems needed to use AI coding tools effectively and
+responsibly.</p>
 </div>
+<div class="section level2">
+<h2 id="target-audience">Target Audience<a class="anchor" aria-label="anchor" href="#target-audience"></a>
+</h2>
+<p>A researcher, research-support professional, student, or other domain
+expert who has little formal programming training but is already using
+or wants to use AI coding assistants to create scripts, analyses,
+automations, websites, dashboards, or small applications.</p>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
 </div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
+</div></section><section id="aio-01-ideas-to-computational-problems"><p>Content from <a href="01-ideas-to-computational-problems.html">From Ideas to Computational Problems</a></p>
+<hr>
+<p>Last updated on 2026-10-27 |
+
+        <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/edit/main/episodes/01-ideas-to-computational-problems.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 120 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="section level1">
+<h1 id="from-ideas-to-computational-problems">From Ideas to Computational Problems<a class="anchor" aria-label="anchor" href="#from-ideas-to-computational-problems"></a>
+</h1>
+<p>Imagine asking an AI coding agent:</p>
+<blockquote>
+<p>Build me an application to manage my daily tasks.</p>
+</blockquote>
+<p>The agent may produce a working-looking application, but what does
+<em>manage</em> mean? Can users add tasks, complete them, delete them,
+or keep them after refreshing the page? If we do not specify these
+details, the agent will make assumptions.</p>
+<p>In this lesson, we will turn an idea into a <strong>computational
+workflow</strong> and then into <strong>pseudocode</strong> that another
+person or an AI coding agent can implement and test. Our running example
+is a simple task manager.</p>
+<div class="section level2">
+<h2 id="from-an-idea-to-a-computational-problem-10-minutes">1. From an idea to a computational problem (10 minutes)<a class="anchor" aria-label="anchor" href="#from-an-idea-to-a-computational-problem-10-minutes"></a>
+</h2>
+<p>A computational problem can be described in terms of information,
+operations, decisions, and expected results. Before building, ask what
+the application must actually do.</p>
+<div id="challenge-whats-missing-3-minutes" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
+<div id="challenge-whats-missing-3-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: What’s missing? (3 minutes)</h3>
 <div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
+<p>A friend says: “I want an application to manage my daily tasks.”
+Write three questions you would ask before implementing it. Compare your
+questions with a partner.</p>
 </div>
 </div>
 </div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
+  <h4 class="accordion-header" id="headingSolution1">
+  Example discussion
+  </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+<ul>
+<li>What information is required to add a task?</li>
+<li>What happens when a task is marked complete?</li>
+<li>Should tasks remain available after the page is refreshed?</li>
+<li>What happens if someone tries to add an empty task?</li>
+</ul>
+<p>There is no single correct list: the purpose is to uncover hidden
+assumptions.</p>
 </div>
 </div>
 </div>
 </div>
+<p><strong>Key idea:</strong> Computers require explicit behaviour. AI
+agents can guess, but their guesses may not match your intentions.</p>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<div class="section level2">
+<h2 id="breaking-a-problem-into-smaller-steps-15-minutes">2. Breaking a problem into smaller steps (15 minutes)<a class="anchor" aria-label="anchor" href="#breaking-a-problem-into-smaller-steps-15-minutes"></a>
+</h2>
+<p><strong>Decomposition</strong> means dividing a large task into
+smaller responsibilities. A task manager might need to add, display,
+complete, and delete tasks. Start with one feature: adding a task.</p>
+<pre class="text"><code>1. User enters a task description
+2. User clicks Add
+3. Application checks the description
+4. Application saves a valid task
+5. Application displays the updated task list</code></pre>
+<div id="challenge-complete-a-task-5-minutes" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
+<div id="challenge-complete-a-task-5-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: Complete a task (5 minutes)</h3>
 <div class="callout-content">
-
+<p>Write the steps that should happen when a user marks a task as
+completed. Which steps must happen in a particular order?</p>
 </div>
 </div>
 </div>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+  <h4 class="accordion-header" id="headingSolution2">
+  Example solution
+  </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
+<pre class="text"><code>1. User selects a task
+2. User clicks Complete
+3. Application identifies the selected task
+4. Application changes its completed status to true
+5. Application saves the updated task
+6. Application refreshes the displayed task list</code></pre>
 </div>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+</div>
+<div class="section level2">
+<h2 id="inputs-outputs-variables-and-state-15-minutes">3. Inputs, outputs, variables, and state (15 minutes)<a class="anchor" aria-label="anchor" href="#inputs-outputs-variables-and-state-15-minutes"></a>
 </h2>
-<hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<p>An <strong>input</strong> is information supplied to a process; an
+<strong>output</strong> is what the process produces.</p>
+<table class="table">
+<thead><tr>
+<th>Part</th>
+<th>Add Task example</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Input</td>
+<td>Task description</td>
+</tr>
+<tr>
+<td>Process</td>
+<td>Validate and save the task</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Updated task list or an error message</td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>variable</strong> names a value used by the program:</p>
+<pre class="text"><code><span><span class="va">task_description</span> <span class="op">=</span> <span class="st">"Submit assignment"</span></span>
+<span><span class="va">task_completed</span> <span class="op">=</span> <span class="va">false</span></span>
+<span><span class="va">task_priority</span> <span class="op">=</span> <span class="st">"High"</span></span></code></pre>
+<p><strong>State</strong> is the information that represents the
+application’s current situation. For example, a list of tasks and their
+completion statuses is part of the task manager’s state. When a task is
+added or completed, state changes.</p>
+<p><strong>Persistence</strong> is different: if tasks must survive a
+refresh or restart, the application must store them and reload them
+later.</p>
+<div id="challenge-identify-state-3-minutes" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
+<span class="callout-header">Challenge</span>
+<div id="challenge-identify-state-3-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: Identify state (3 minutes)</h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<p>For a shopping-list app, identify two pieces of information the app
+must remember. Which information should survive closing the browser?</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Example solution
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>The app remembers each item’s name and whether it has been purchased.
+If users expect to return later, the list and purchased statuses should
+be saved persistently.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="conditions-and-decision-making-15-minutes">4. Conditions and decision-making (15 minutes)<a class="anchor" aria-label="anchor" href="#conditions-and-decision-making-15-minutes"></a>
 </h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
+<p>A <strong>condition</strong> determines which action happens based on
+a question with a true/false result. What if the user clicks Add without
+entering anything?</p>
+<pre class="text"><code>IF task_description is empty or whitespace only
+    SHOW "Please enter a task"
+ELSE
+    SAVE the task</code></pre>
+<p>The workflow branches: invalid input produces an error; valid input
+produces a saved task.</p>
+<div id="challenge-priority-warning-4-minutes" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Key Points</span>
-<div class="callout-inner">
+<span class="callout-header">Challenge</span>
+<div id="challenge-priority-warning-4-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: Priority warning (4 minutes)</h3>
 <div class="callout-content">
+<p>Write pseudocode for this rule: If a task has high priority, display
+a warning; otherwise, display the task normally.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  Example solution
+  </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<pre class="text"><code>IF task_priority is "High"
+    DISPLAY priority warning
+ELSE
+    DISPLAY task normally</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="repetition-and-loops-10-minutes">5. Repetition and loops (10 minutes)<a class="anchor" aria-label="anchor" href="#repetition-and-loops-10-minutes"></a>
+</h2>
+<p>Suppose the app has 100 tasks. We should not write 100 separate
+display instructions. A <strong>loop</strong> describes an operation
+that repeats:</p>
+<pre class="text"><code>FOR EACH task IN saved_tasks
+    DISPLAY task</code></pre>
+<p>Look for phrases such as <em>each</em>, <em>every</em>,
+<em>repeat</em>, or <em>until</em> when analyzing a task.</p>
+<div id="challenge-spot-repetition-3-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-spot-repetition-3-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: Spot repetition (3 minutes)</h3>
+<div class="callout-content">
+<p>Which tasks involve repetition?</p>
+<ol style="list-style-type: decimal">
+<li>Display every product in an online shop.</li>
+<li>Check whether one password is empty.</li>
+<li>Calculate the total price of all items in a basket.</li>
+<li>Change a page title once.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">
+  Example solution
+  </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div class="accordion-body">
+<p>Tasks 1 and 3 naturally involve repetition over collections. Tasks 2
+and 4 do not inherently require a loop.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="functions-naming-smaller-jobs-10-minutes">6. Functions: Naming smaller jobs (10 minutes)<a class="anchor" aria-label="anchor" href="#functions-naming-smaller-jobs-10-minutes"></a>
+</h2>
+<p>A <strong>function</strong> is a named, reusable operation with a
+clear responsibility. We can describe the task manager using jobs such
+as:</p>
+<pre class="text"><code><span><span class="fu">validateTask</span><span class="op">(</span><span class="va">description</span><span class="op">)</span></span>
+<span><span class="fu">saveTask</span><span class="op">(</span><span class="va">task</span><span class="op">)</span></span>
+<span><span class="fu">displayTasks</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">completeTask</span><span class="op">(</span><span class="va">task_id</span><span class="op">)</span></span></code></pre>
+<p>A function may accept information and return a result:</p>
+<pre class="text"><code>FUNCTION validateTask(description)
+    IF description is empty or whitespace only
+        RETURN false
+    ELSE
+        RETURN true
+END FUNCTION</code></pre>
+<div id="challenge-name-the-jobs-3-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-name-the-jobs-3-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: Name the jobs (3 minutes)</h3>
+<div class="callout-content">
+<p>Suggest three functions for an expense tracker that records expenses
+and calculates total spending.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6">
+  Example solution
+  </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div class="accordion-body">
+<p><code>validateAmount()</code>, <code>addExpense()</code>, and
+<code>calculateTotal()</code> are possible choices. Other sensible
+designs are acceptable.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="dependencies-and-data-flow-10-minutes">7. Dependencies and data flow (10 minutes)<a class="anchor" aria-label="anchor" href="#dependencies-and-data-flow-10-minutes"></a>
+</h2>
+<p>Some steps cannot happen until earlier steps have finished. For
+example, we cannot validate a description before reading it, and we
+should not save an invalid description.</p>
+<pre class="text"><code>Read description
+       ↓
+Validate description
+       ↓
+Save valid task
+       ↓
+Update task list</code></pre>
+<p>These ordering requirements are <strong>dependencies</strong>.
+<strong>Data flow</strong> describes where information comes from, how
+operations use or change it, and where results go.</p>
+<div id="challenge-fix-the-order-3-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-fix-the-order-3-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: Fix the order (3 minutes)</h3>
+<div class="callout-content">
+<p>Put these actions in a sensible order:
+<code>display updated list</code>, <code>validate description</code>,
+<code>read description</code>, <code>save task</code>.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7">
+  Example solution
+  </h4>
+</button>
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div class="accordion-body">
+<p>Read description → validate description → save valid task → display
+updated list. If validation fails, show an error instead of saving.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="writing-pseudocode-15-minutes">8. Writing pseudocode (15 minutes)<a class="anchor" aria-label="anchor" href="#writing-pseudocode-15-minutes"></a>
+</h2>
+<p><strong>Pseudocode</strong> expresses a workflow in readable,
+structured language without requiring the syntax of a specific
+programming language. It combines the concepts we have learned:</p>
+<pre class="text"><code>START TASK MANAGER
+
+LOAD saved tasks
+FOR EACH task IN saved tasks
+    DISPLAY task
+
+WHEN user clicks Add
+    READ task description
+    IF description is empty or whitespace only
+        SHOW error
+    ELSE
+        CREATE task with completed = false
+        SAVE task
+        DISPLAY updated task list
+
+WHEN user marks a task complete
+    FIND selected task
+    IF task exists
+        SET completed = true
+        SAVE updated task
+        DISPLAY updated task list
+    ELSE
+        SHOW "Task not found"
+
+END TASK MANAGER</code></pre>
+<table class="table">
+<thead><tr>
+<th>Pseudocode element</th>
+<th>Concept</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>READ task description</code></td>
+<td>Input</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Variable</td>
+</tr>
+<tr>
+<td><code>IF description is empty</code></td>
+<td>Condition</td>
+</tr>
+<tr>
+<td><code>FOR EACH task</code></td>
+<td>Loop</td>
+</tr>
+<tr>
+<td><code>completed</code></td>
+<td>State</td>
+</tr>
+<tr>
+<td><code>SAVE updated task</code></td>
+<td>Operation/function</td>
+</tr>
+<tr>
+<td>Validate before save</td>
+<td>Dependency</td>
+</tr>
+<tr>
+<td>Read → validate → save → display</td>
+<td>Data flow</td>
+</tr>
+</tbody>
+</table>
+<div id="challenge-add-deletion-5-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-add-deletion-5-minutes" class="callout-inner">
+<h3 class="callout-title">Challenge: Add deletion (5 minutes)</h3>
+<div class="callout-content">
+<p>Write pseudocode for deleting a selected task. Consider what happens
+if the task cannot be found.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
+  <h4 class="accordion-header" id="headingSolution8">
+  Example solution
+  </h4>
+</button>
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div class="accordion-body">
+<pre class="text"><code>WHEN user clicks Delete
+    IDENTIFY selected task
+    IF task exists
+        REMOVE task from saved tasks
+        SAVE updated task list
+        DISPLAY updated task list
+    ELSE
+        SHOW "Task not found"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="from-pseudocode-to-an-ai-coding-agent-10-minutes">9. From pseudocode to an AI coding agent (10 minutes)<a class="anchor" aria-label="anchor" href="#from-pseudocode-to-an-ai-coding-agent-10-minutes"></a>
+</h2>
+<p>We will compare two prompts in the same AI coding environment.</p>
+<p><strong>Experiment A: Vague prompt</strong></p>
+<blockquote>
+<p>Build me a simple task manager.</p>
+</blockquote>
+<p>Run the result. Record what the agent decided without asking you:
+supported features, validation, saving, and interface behaviour.</p>
+<p><strong>Experiment B: Structured prompt</strong></p>
+<blockquote>
+<p>Build a simple browser-based task manager using HTML, CSS, and
+JavaScript. Users must be able to add, complete, and delete tasks. Each
+task has a unique ID, description, and completed status. Reject empty or
+whitespace-only descriptions with an error message. Save tasks in
+browser localStorage and load them when the page opens. Update the
+displayed list after each change. First explain your plan briefly, then
+implement. Do not add extra features. Explain how to test the main
+behaviours.</p>
+</blockquote>
+<p>Compare the implementations:</p>
+<table class="table">
+<thead><tr>
+<th>Question</th>
+<th>Vague prompt</th>
+<th>Structured prompt</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Were intended features implemented?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Were important behaviours missing?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Did the agent make unexpected assumptions?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Can you verify the result?</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important:</strong> A detailed specification does not
+guarantee correct software. It makes intended behaviour easier to
+communicate and test.</p>
+</div>
+<div class="section level2">
+<h2 id="independent-challenge-expense-tracker-10-minutes-extend-as-homework">10. Independent challenge: Expense tracker (10 minutes; extend as
+homework)<a class="anchor" aria-label="anchor" href="#independent-challenge-expense-tracker-10-minutes-extend-as-homework"></a>
+</h2>
+<p><strong>Scenario:</strong> Build an application that lets users
+record expenses and see how much they have spent.</p>
+<p>Before asking an AI agent to code, complete this worksheet:</p>
+<table class="table">
+<thead><tr>
+<th>Question</th>
+<th>Your answer</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Goal: What should the app achieve?</td>
+<td></td>
+</tr>
+<tr>
+<td>Inputs: What does the user provide?</td>
+<td></td>
+</tr>
+<tr>
+<td>Outputs: What should appear?</td>
+<td></td>
+</tr>
+<tr>
+<td>Steps: What happens when an expense is added?</td>
+<td></td>
+</tr>
+<tr>
+<td>Variables and state: What must be remembered?</td>
+<td></td>
+</tr>
+<tr>
+<td>Conditions: What decisions are needed?</td>
+<td></td>
+</tr>
+<tr>
+<td>Loops: What repeats?</td>
+<td></td>
+</tr>
+<tr>
+<td>Functions: What smaller jobs are needed?</td>
+<td></td>
+</tr>
+<tr>
+<td>Dependencies: What must happen first?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Next, write pseudocode, ask an AI coding agent to implement it, and
+test these cases:</p>
+<ol style="list-style-type: decimal">
+<li>Add a valid expense.</li>
+<li>Try to add an expense without an amount.</li>
+<li>Add multiple expenses and verify the total.</li>
+</ol>
+<p><strong>Reflection:</strong> What did the AI implement differently
+from what you expected? How would you change your specification?</p>
+</div>
+<div class="section level2">
+<h2 id="key-points">Key points<a class="anchor" aria-label="anchor" href="#key-points"></a>
+</h2>
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>Start by clarifying the goal, inputs, and expected outputs.</li>
+<li>Decompose a large task into smaller, ordered operations.</li>
+<li>Use variables and state to describe the information the application
+works with and remembers.</li>
+<li>Use conditions for decisions and loops for repeated operations.</li>
+<li>Use functions to name meaningful, reusable jobs.</li>
+<li>Track dependencies and data flow to ensure the workflow makes
+sense.</li>
+<li>Use pseudocode to communicate behaviour before implementing it.</li>
+<li>Test AI-generated implementations against explicit examples and
+refine the specification when needed.</li>
 </ul>
 </div>
-</div>
-</div>
+<div class="section level2">
+<h2 id="instructor-notes">Instructor notes<a class="anchor" aria-label="anchor" href="#instructor-notes"></a>
+</h2>
+<p><strong>Teaching approach:</strong> Build the task-manager workflow
+live with learners. Ask for predictions and learner suggestions before
+showing solutions. Keep explanations short and alternate them with
+exercises.</p>
+<p><strong>Common misconceptions:</strong></p>
+<ul>
+<li>“AI will figure out what I mean.” Ask which assumptions the agent
+made.</li>
+<li>“Pseudocode must look like real code.” Emphasize clarity rather than
+syntax.</li>
+<li>“Every step must be a function.” Prefer functions with meaningful
+responsibilities.</li>
+<li>“State means a database.” Contrast in-memory state with persistent
+storage.</li>
+<li>“If the AI produces an app, the task is complete.” Require
+behavioural tests.</li>
+</ul>
+<p><strong>Formative checkpoints:</strong></p>
+<ul>
+<li>Can another person follow the workflow without guessing?</li>
+<li>What happens with missing or invalid input?</li>
+<li>What repeats when there are 100 items instead of three?</li>
+<li>Which operations depend on earlier results?</li>
+<li>What example would prove that the feature works?</li>
+</ul>
+<p><strong>Exit ticket:</strong> Describe the inputs, outputs, state,
+decisions, repetition, and main steps of a meal recommender that uses
+ingredients already available at home.</p>
+<p><strong>Note on formatting:</strong> This lesson uses Markdown with
+YAML front matter and fenced
+<code>challenge</code>/<code>solution</code> blocks. Adapt block syntax
+and metadata to the specific version of the Carpentries Workbench
+template used by your repository before publishing.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section>
+</div>
+</div></section>
 </div>
     </main>
 </div>
@@ -528,14 +1046,14 @@ any links that you are not going to use.
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/edit/main/README.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/carpentries/workbench-template-md/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/carpentries/workbench-template-md/" class="external-link">Source</a></p>
+        | <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/" class="external-link">Source</a></p>
         <p>
         <a href="../citation.html">Cite</a>
-        | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="mailto:rrox-steering@maillist.ox.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 		</div>
 		<div class="col-md-6">
 
@@ -555,15 +1073,15 @@ any links that you are not going to use.
     {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
+  "@id": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/aio.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "software, data, lesson, The Carpentries",
+  "keywords": "AI, Coding, Programming, The Carpentries",
   "name": "All in One View",
   "creativeWorkStatus": "active",
-  "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
-  "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
+  "url": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/aio.html",
+  "identifier": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/aio.html",
   "dateCreated": "2026-10-27",
   "dateModified": "2026-10-27",
   "datePublished": "2026-10-27"
