@@ -67,8 +67,8 @@ contact: 'rrox-steering@maillist.ox.ac.uk' # FIXME
 
 # Order of episodes in your lesson
 episodes: 
-- introduction-workbench.md
-- 01-ideas-to-computational-problems-workbench.md
+- introduction.md
+- 01-ideas-to-computational-problems.md
 
 # Information for Learners
 learners: 
