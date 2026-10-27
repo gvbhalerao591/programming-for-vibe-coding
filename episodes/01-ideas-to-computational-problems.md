@@ -2,22 +2,25 @@
 title: "From Ideas to Computational Problems"
 teaching: 90
 exercises: 30
-questions:
-  - "How do I describe what I want in a way that a computer or AI agent can implement?"
-objectives:
-  - "Break a larger task into smaller, ordered steps."
-  - "Identify inputs, outputs, variables, and state."
-  - "Describe conditions, loops, functions, dependencies, and data flow."
-  - "Write pseudocode for a simple application."
-  - "Use pseudocode to guide and verify an AI-generated implementation."
-keypoints:
-  - "A vague idea becomes implementable when its behaviour is made explicit."
-  - "Decomposition, decisions, repetition, and state are building blocks of workflows."
-  - "Pseudocode communicates logic without requiring programming-language syntax."
-  - "AI-generated software must be checked against explicit requirements and examples."
 ---
 
-# From Ideas to Computational Problems
+:::::::::::::::::::::::::::::::::::::: questions
+
+- How do I describe what I want in a way that a computer or AI agent can implement?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Break a larger task into smaller, ordered steps.
+- Identify inputs, outputs, variables, and state.
+- Describe conditions, loops, functions, dependencies, and data flow.
+- Write pseudocode for a simple application.
+- Use pseudocode to guide and verify an AI-generated implementation.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Introduction
 
 Imagine asking an AI coding agent:
 
@@ -27,16 +30,18 @@ The agent may produce a working-looking application, but what does *manage* mean
 
 In this lesson, we will turn an idea into a **computational workflow** and then into **pseudocode** that another person or an AI coding agent can implement and test. Our running example is a simple task manager.
 
-## 1. From an idea to a computational problem (10 minutes)
+## 1. From an Idea to a Computational Problem (10 minutes)
 
 A computational problem can be described in terms of information, operations, decisions, and expected results. Before building, ask what the application must actually do.
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: What's missing? (3 minutes)
 
-A friend says: “I want an application to manage my daily tasks.” Write three questions you would ask before implementing it. Compare your questions with a partner.
+A friend says, "I want an application to manage my daily tasks." Write three questions you would ask before implementing it. Compare your questions with a partner.
 
-::: solution
+:::::::::::::::::::::::::::::::: solution
+
 ### Example discussion
 
 - What information is required to add a task?
@@ -45,12 +50,13 @@ A friend says: “I want an application to manage my daily tasks.” Write three
 - What happens if someone tries to add an empty task?
 
 There is no single correct list: the purpose is to uncover hidden assumptions.
-:::
-:::
+
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 **Key idea:** Computers require explicit behaviour. AI agents can guess, but their guesses may not match your intentions.
 
-## 2. Breaking a problem into smaller steps (15 minutes)
+## 2. Breaking a Problem into Smaller Steps (15 minutes)
 
 **Decomposition** means dividing a large task into smaller responsibilities. A task manager might need to add, display, complete, and delete tasks. Start with one feature: adding a task.
 
@@ -62,13 +68,13 @@ There is no single correct list: the purpose is to uncover hidden assumptions.
 5. Application displays the updated task list
 ```
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: Complete a task (5 minutes)
 
 Write the steps that should happen when a user marks a task as completed. Which steps must happen in a particular order?
 
-::: solution
-### Example solution
+:::::::::::::::::::::::::::::::: solution
 
 ```text
 1. User selects a task
@@ -78,10 +84,11 @@ Write the steps that should happen when a user marks a task as completed. Which 
 5. Application saves the updated task
 6. Application refreshes the displayed task list
 ```
-:::
-:::
 
-## 3. Inputs, outputs, variables, and state (15 minutes)
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 3. Inputs, Outputs, Variables, and State (15 minutes)
 
 An **input** is information supplied to a process; an **output** is what the process produces.
 
@@ -103,19 +110,20 @@ task_priority = "High"
 
 **Persistence** is different: if tasks must survive a refresh or restart, the application must store them and reload them later.
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: Identify state (3 minutes)
 
 For a shopping-list app, identify two pieces of information the app must remember. Which information should survive closing the browser?
 
-::: solution
-### Example solution
+:::::::::::::::::::::::::::::::: solution
 
 The app remembers each item's name and whether it has been purchased. If users expect to return later, the list and purchased statuses should be saved persistently.
-:::
-:::
 
-## 4. Conditions and decision-making (15 minutes)
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 4. Conditions and Decision-Making (15 minutes)
 
 A **condition** determines which action happens based on a question with a true/false result. What if the user clicks Add without entering anything?
 
@@ -128,13 +136,13 @@ ELSE
 
 The workflow branches: invalid input produces an error; valid input produces a saved task.
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: Priority warning (4 minutes)
 
 Write pseudocode for this rule: If a task has high priority, display a warning; otherwise, display the task normally.
 
-::: solution
-### Example solution
+:::::::::::::::::::::::::::::::: solution
 
 ```text
 IF task_priority is "High"
@@ -142,10 +150,11 @@ IF task_priority is "High"
 ELSE
     DISPLAY task normally
 ```
-:::
-:::
 
-## 5. Repetition and loops (10 minutes)
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 5. Repetition and Loops (10 minutes)
 
 Suppose the app has 100 tasks. We should not write 100 separate display instructions. A **loop** describes an operation that repeats:
 
@@ -156,7 +165,8 @@ FOR EACH task IN saved_tasks
 
 Look for phrases such as *each*, *every*, *repeat*, or *until* when analyzing a task.
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: Spot repetition (3 minutes)
 
 Which tasks involve repetition?
@@ -166,14 +176,14 @@ Which tasks involve repetition?
 3. Calculate the total price of all items in a basket.
 4. Change a page title once.
 
-::: solution
-### Example solution
+:::::::::::::::::::::::::::::::: solution
 
 Tasks 1 and 3 naturally involve repetition over collections. Tasks 2 and 4 do not inherently require a loop.
-:::
-:::
 
-## 6. Functions: Naming smaller jobs (10 minutes)
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 6. Functions: Naming Smaller Jobs (10 minutes)
 
 A **function** is a named, reusable operation with a clear responsibility. We can describe the task manager using jobs such as:
 
@@ -195,47 +205,52 @@ FUNCTION validateTask(description)
 END FUNCTION
 ```
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: Name the jobs (3 minutes)
 
 Suggest three functions for an expense tracker that records expenses and calculates total spending.
 
-::: solution
-### Example solution
+:::::::::::::::::::::::::::::::: solution
 
 `validateAmount()`, `addExpense()`, and `calculateTotal()` are possible choices. Other sensible designs are acceptable.
-:::
-:::
 
-## 7. Dependencies and data flow (10 minutes)
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 7. Dependencies and Data Flow (10 minutes)
 
 Some steps cannot happen until earlier steps have finished. For example, we cannot validate a description before reading it, and we should not save an invalid description.
 
 ```text
 Read description
-       ↓
+       |
+       v
 Validate description
-       ↓
+       |
+       v
 Save valid task
-       ↓
+       |
+       v
 Update task list
 ```
 
 These ordering requirements are **dependencies**. **Data flow** describes where information comes from, how operations use or change it, and where results go.
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: Fix the order (3 minutes)
 
 Put these actions in a sensible order: `display updated list`, `validate description`, `read description`, `save task`.
 
-::: solution
-### Example solution
+:::::::::::::::::::::::::::::::: solution
 
-Read description → validate description → save valid task → display updated list. If validation fails, show an error instead of saving.
-:::
-:::
+Read description -> validate description -> save valid task -> display updated list. If validation fails, show an error instead of saving.
 
-## 8. Writing pseudocode (15 minutes)
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 8. Writing Pseudocode (15 minutes)
 
 **Pseudocode** expresses a workflow in readable, structured language without requiring the syntax of a specific programming language. It combines the concepts we have learned:
 
@@ -276,15 +291,15 @@ END TASK MANAGER
 | `completed` | State |
 | `SAVE updated task` | Operation/function |
 | Validate before save | Dependency |
-| Read → validate → save → display | Data flow |
+| Read -> validate -> save -> display | Data flow |
 
-::: challenge
+::::::::::::::::::::::::::::::::::::::: challenge
+
 ### Challenge: Add deletion (5 minutes)
 
 Write pseudocode for deleting a selected task. Consider what happens if the task cannot be found.
 
-::: solution
-### Example solution
+:::::::::::::::::::::::::::::::: solution
 
 ```text
 WHEN user clicks Delete
@@ -296,10 +311,11 @@ WHEN user clicks Delete
     ELSE
         SHOW "Task not found"
 ```
-:::
-:::
 
-## 9. From pseudocode to an AI coding agent (10 minutes)
+::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 9. From Pseudocode to an AI Coding Agent (10 minutes)
 
 We will compare two prompts in the same AI coding environment.
 
@@ -324,7 +340,7 @@ Compare the implementations:
 
 **Important:** A detailed specification does not guarantee correct software. It makes intended behaviour easier to communicate and test.
 
-## 10. Independent challenge: Expense tracker (10 minutes; extend as homework)
+## 10. Independent Challenge: Expense Tracker (10 minutes; extend as homework)
 
 **Scenario:** Build an application that lets users record expenses and see how much they have spent.
 
@@ -350,28 +366,19 @@ Next, write pseudocode, ask an AI coding agent to implement it, and test these c
 
 **Reflection:** What did the AI implement differently from what you expected? How would you change your specification?
 
-## Key points
+:::::::::::::::::::::::::::::::::::: instructor
 
-- Start by clarifying the goal, inputs, and expected outputs.
-- Decompose a large task into smaller, ordered operations.
-- Use variables and state to describe the information the application works with and remembers.
-- Use conditions for decisions and loops for repeated operations.
-- Use functions to name meaningful, reusable jobs.
-- Track dependencies and data flow to ensure the workflow makes sense.
-- Use pseudocode to communicate behaviour before implementing it.
-- Test AI-generated implementations against explicit examples and refine the specification when needed.
-
-## Instructor notes
+## Instructor Notes
 
 **Teaching approach:** Build the task-manager workflow live with learners. Ask for predictions and learner suggestions before showing solutions. Keep explanations short and alternate them with exercises.
 
 **Common misconceptions:**
 
-- “AI will figure out what I mean.” Ask which assumptions the agent made.
-- “Pseudocode must look like real code.” Emphasize clarity rather than syntax.
-- “Every step must be a function.” Prefer functions with meaningful responsibilities.
-- “State means a database.” Contrast in-memory state with persistent storage.
-- “If the AI produces an app, the task is complete.” Require behavioural tests.
+- "AI will figure out what I mean." Ask which assumptions the agent made.
+- "Pseudocode must look like real code." Emphasize clarity rather than syntax.
+- "Every step must be a function." Prefer functions with meaningful responsibilities.
+- "State means a database." Contrast in-memory state with persistent storage.
+- "If the AI produces an app, the task is complete." Require behavioural tests.
 
 **Formative checkpoints:**
 
@@ -383,4 +390,17 @@ Next, write pseudocode, ask an AI coding agent to implement it, and test these c
 
 **Exit ticket:** Describe the inputs, outputs, state, decisions, repetition, and main steps of a meal recommender that uses ingredients already available at home.
 
-**Note on formatting:** This lesson uses Markdown with YAML front matter and fenced `challenge`/`solution` blocks. Adapt block syntax and metadata to the specific version of the Carpentries Workbench template used by your repository before publishing.
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: keypoints
+
+- Start by clarifying the goal, inputs, and expected outputs.
+- Decompose a large task into smaller, ordered operations.
+- Use variables and state to describe the information the application works with and remembers.
+- Use conditions for decisions and loops for repeated operations.
+- Use functions to name meaningful, reusable jobs.
+- Track dependencies and data flow to ensure the workflow makes sense.
+- Use pseudocode to communicate behaviour before implementing it.
+- Test AI-generated implementations against explicit examples and refine the specification when needed.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
