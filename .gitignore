@@ -49,3 +49,9 @@ docs/
 # translation temp files
 po/*~
 
+# Local teaching example state
+__pycache__/
+*.pyc
+episodes/files/*.sqlite3
+episodes/files/*.sqlite3-*
+

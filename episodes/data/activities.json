@@ -1,0 +1,5 @@
+[
+  {"id": 101, "activity": "Literature review", "hours": 2.5, "completed": true},
+  {"id": 102, "activity": "Clean survey data", "hours": 1.0, "completed": false},
+  {"id": 103, "activity": "Draft report", "hours": 3.0, "completed": false}
+]

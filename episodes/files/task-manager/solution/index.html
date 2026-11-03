@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task manager — solution</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Task manager — solution</h1>
+    <p>Add, complete, and delete practice tasks.</p>
+    <form>
+      <label for="description">Task description</label>
+      <input id="description" name="description" autocomplete="off">
+      <button type="submit">Add task</button>
+    </form>
+    <p id="message" role="status" aria-live="polite"></p>
+    <ul id="tasks" aria-label="Tasks"></ul>
+    <button id="reset" type="button">Clear practice tasks</button>
+  </main>
+</body>
+</html>
