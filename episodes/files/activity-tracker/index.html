@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research activity tracker</title>
+  <link rel="stylesheet" href="../task-manager/style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Research activity tracker</h1>
+    <p>Record a practice activity and the time spent on it.</p>
+    <form>
+      <label for="activity">Activity</label>
+      <input id="activity" name="activity" required>
+      <label for="hours">Hours (greater than 0, at most 24)</label>
+      <input id="hours" name="hours" type="number" min="0" max="24" step="any" required>
+      <button type="submit">Save activity</button>
+    </form>
+    <p id="message" role="status" aria-live="polite"></p>
+    <h2>Saved activities</h2>
+    <button id="reload" type="button">Reload list</button>
+    <ul id="activities" aria-label="Saved activities"></ul>
+  </main>
+</body>
+</html>
