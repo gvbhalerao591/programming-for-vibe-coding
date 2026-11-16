@@ -10,7 +10,13 @@
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/01-introduction.html</loc>
   </url>
   <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/02-What-AI-Is-Building.html</loc>
+  </url>
+  <url>
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/03-Data-File-StructuredInfo.html</loc>
+  </url>
+  <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/04-How-Web-Applications-Work.html</loc>
   </url>
   <url>
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/404.html</loc>
@@ -28,6 +34,15 @@
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/citation.html</loc>
   </url>
   <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/files/activity-tracker/index.html</loc>
+  </url>
+  <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/files/task-manager/solution/index.html</loc>
+  </url>
+  <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/files/task-manager/starter/index.html</loc>
+  </url>
+  <url>
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/images.html</loc>
   </url>
   <url>
@@ -43,7 +58,13 @@
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/01-introduction.html</loc>
   </url>
   <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/02-What-AI-Is-Building.html</loc>
+  </url>
+  <url>
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/03-Data-File-StructuredInfo.html</loc>
+  </url>
+  <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/04-How-Web-Applications-Work.html</loc>
   </url>
   <url>
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/404.html</loc>
@@ -85,6 +106,12 @@
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/request-transcripts.html</loc>
+  </url>
+  <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/worksheet.html</loc>
+  </url>
+  <url>
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor-notes.html</loc>
   </url>
   <url>
@@ -101,5 +128,11 @@
   </url>
   <url>
     <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/request-transcripts.html</loc>
+  </url>
+  <url>
+    <loc>https://gvbhalerao591.github.io/programming-for-vibe-coding/worksheet.html</loc>
   </url>
 </urlset>

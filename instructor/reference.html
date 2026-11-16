@@ -107,7 +107,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="reference.html">Reference</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><hr><li><a class="dropdown-item" href="reference.html">Reference</a></li><li><a class="dropdown-item" href="request-transcripts.html">Prepared Request Evidence</a></li><li><a class="dropdown-item" href="worksheet.html">Observation Worksheet</a></li>
           </ul></li>
       </ul></div>
     <!--
@@ -214,7 +214,25 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="03-Data-File-StructuredInfo.html">2. Data, Files and Structured Information</a>
+        <a href="02-What-AI-Is-Building.html">2. Understanding What AI Is Building</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="03-Data-File-StructuredInfo.html">3. Data, Files and Structured Information</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="04-How-Web-Applications-Work.html">4. How Web Applications Work</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -256,7 +274,7 @@
                 </h2>
                 <div id="flush-collapse-resources-toggle" class="accordion-collapse collapse" data-bs-parent="#accordion-resources-toggle">
                   <div class="accordion-body">
-                    <ul><hr><li><a class="dropdown-item" href="reference.html">Reference</a></li>
+                    <ul><hr><li><a class="dropdown-item" href="reference.html">Reference</a></li><li><a class="dropdown-item" href="request-transcripts.html">Prepared Request Evidence</a></li><li><a class="dropdown-item" href="worksheet.html">Observation Worksheet</a></li>
                     </ul></div>
                 </div>
               </div>
@@ -287,7 +305,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Reference</h1>
-        <p>Last updated on 2023-03-16 |
+        <p>Last updated on 2026-11-16 |
 
         <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/edit/main/learners/reference.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -300,13 +318,155 @@
         </div>
 
         
-<section><h2 class="section-heading" id="glossary">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a></h2>
-<hr class="half-width"><p>This is a placeholder file. Please add content here.</p>
-<!--
+
+<section><h2 class="section-heading" id="read-and-verify-generated-code">Read and verify generated code<a class="anchor" aria-label="anchor" href="#read-and-verify-generated-code"></a></h2>
+<hr class="half-width"><ol style="list-style-type: decimal"><li>State required behaviour and a concrete input/output example.</li>
+<li>Find where input enters and which function handles it.</li>
+<li>Follow arguments into parameters and conditions; identify return
+values.</li>
+<li>Separate changes to memory, storage, and the visible result.</li>
+<li>Check imports and configuration before assuming a missing
+dependency.</li>
+<li>Record expected and observed behaviour, including invalid
+input.</li>
+<li>Request a focused change; inspect changed lines and repeat
+checks.</li>
+</ol><p>Useful request pattern:</p>
+<blockquote>
+<p>For this input, I expected X and observed Y. Here is the relevant
+code/error. Explain the cause and propose a focused change. Show changed
+lines and checks for normal, invalid, and boundary inputs. Keep these
+existing behaviours working.</p>
+</blockquote>
+</section><section><h2 class="section-heading" id="investigate-a-web-application">Investigate a web application<a class="anchor" aria-label="anchor" href="#investigate-a-web-application"></a></h2>
+<hr class="half-width"><p>Follow evidence through:</p>
+<pre class="text"><code>Browser action -&gt; request -&gt; server checks -&gt; storage operation
+    -&gt; response -&gt; optional retrieval request -&gt; displayed result</code></pre>
+<p>Record method, URL, payload, response status/body, and visible
+behaviour. A record in a GET response but absent on screen suggests a
+different investigation from a rejected save request.</p>
+</section><section><h2 class="section-heading" id="specify-an-application">Specify an application<a class="anchor" aria-label="anchor" href="#specify-an-application"></a></h2>
+<hr class="half-width"><p>Name users, inputs, validation rules, outputs, state, persistent
+storage, access rules, and failure behaviour. Say who hosts and
+maintains a shared app. Write acceptance checks before asking an AI to
+implement it.</p>
+</section><section><h2 class="section-heading" id="glossary">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a></h2>
+<hr class="half-width"><table class="table"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr><th>Term</th>
+<th>Meaning in this course</th>
+</tr></thead><tbody><tr><td>Acceptance check</td>
+<td>A concrete observation used to assess a requirement.</td>
+</tr><tr><td>API</td>
+<td>An agreed interface through which software requests operations.</td>
+</tr><tr><td>Argument</td>
+<td>An actual value supplied when calling a function.</td>
+</tr><tr><td>Authentication</td>
+<td>Establishing who a user is.</td>
+</tr><tr><td>Authorisation</td>
+<td>Deciding what an identified user is allowed to do.</td>
+</tr><tr><td>Back end</td>
+<td>Application work carried out on a server.</td>
+</tr><tr><td>Boolean</td>
+<td>A true/false value, different from text such as
+<code>"false"</code>.</td>
+</tr><tr><td>Browser</td>
+<td>Client software that loads pages and can execute JavaScript.</td>
+</tr><tr><td>Class</td>
+<td>A definition used to create objects with related data and
+behaviour.</td>
+</tr><tr><td>Client</td>
+<td>Software that requests something from a server.</td>
+</tr><tr><td>Configuration</td>
+<td>Settings that influence how software runs.</td>
+</tr><tr><td>Database</td>
+<td>Organised stored data and facilities for retrieving/changing
+it.</td>
+</tr><tr><td>Dependency</td>
+<td>A required preceding step, or software required by other
+software.</td>
+</tr><tr><td>Deployment</td>
+<td>Placing software and settings into a running environment.</td>
+</tr><tr><td>Domain</td>
+<td>A human-readable name that can resolve to a network address.</td>
+</tr><tr><td>Environment variable</td>
+<td>A named setting supplied to a process by its environment.</td>
+</tr><tr><td>Exception</td>
+<td>A runtime event interrupting normal execution unless handled.</td>
+</tr><tr><td>Field</td>
+<td>A named attribute of a record.</td>
+</tr><tr><td>Front end</td>
+<td>The user-facing part, here running in the browser.</td>
+</tr><tr><td>Function</td>
+<td>A named operation that may accept inputs and return a result.</td>
+</tr><tr><td>Hosting</td>
+<td>Resources/services used to run and serve an application.</td>
+</tr><tr><td>HTTP / HTTPS</td>
+<td>A request/response protocol / its protected transport form.</td>
+</tr><tr><td>Import</td>
+<td>A statement making code from another module available.</td>
+</tr><tr><td>Instance</td>
+<td>An object created from a class.</td>
+</tr><tr><td>Library</td>
+<td>Reusable code providing capabilities to other code.</td>
+</tr><tr><td>localStorage</td>
+<td>Browser storage associated with an origin and browser profile.</td>
+</tr><tr><td>Loopback / localhost</td>
+<td>An address / name referring back to this computer.</td>
+</tr><tr><td>Method</td>
+<td>A function associated with an object; in HTTP, an operation such as
+GET.</td>
+</tr><tr><td>Module</td>
+<td>A unit of code that can expose parts for other code to use.</td>
+</tr><tr><td>Object</td>
+<td>A value grouping properties and possibly methods; usage varies by
+language.</td>
+</tr><tr><td>Origin</td>
+<td>A URL’s scheme, host, and port, used in browser storage/security
+rules.</td>
+</tr><tr><td>Package</td>
+<td>A distributable unit of code and associated information.</td>
+</tr><tr><td>Parameter</td>
+<td>A name for input received by a function.</td>
+</tr><tr><td>Persistence</td>
+<td>Keeping information beyond an operation or process lifetime.</td>
+</tr><tr><td>Property</td>
+<td>A named value associated with an object.</td>
+</tr><tr><td>Record</td>
+<td>Information about one item or observation.</td>
+</tr><tr><td>Return value</td>
+<td>A value sent back from a function to its caller.</td>
+</tr><tr><td>Route</td>
+<td>A mapping from a request method and path to server behaviour.</td>
+</tr><tr><td>Runtime</td>
+<td>Software that executes a program’s instructions.</td>
+</tr><tr><td>Script</td>
+<td>A file of instructions executed by a language runtime.</td>
+</tr><tr><td>Server</td>
+<td>Software responding to requests; also the computer running it.</td>
+</tr><tr><td>Side effect</td>
+<td>A change outside a returned value, such as saving data.</td>
+</tr><tr><td>Source code</td>
+<td>Human-readable instructions used to build or run software.</td>
+</tr><tr><td>Stack trace</td>
+<td>A chain of calls reported with an error.</td>
+</tr><tr><td>State</td>
+<td>Information representing a program’s current situation.</td>
+</tr><tr><td>Validation</td>
+<td>Checking information against agreed rules.</td>
+</tr></tbody></table></section><section><h2 class="section-heading" id="practice-resources">Practice resources<a class="anchor" aria-label="anchor" href="#practice-resources"></a></h2>
+<hr class="half-width"><ul><li>
+<a href="index.html#setup">Setup and readiness check</a>.</li>
+<li>
+<a href="worksheet.html">Printable worksheet</a>.</li>
+<li>
+<a href="request-transcripts.html">Prepared request
+evidence</a>.</li>
+<li>
+<a href="../data/vibe-coding-examples.zip">Downloadable
+examples</a>.</li>
+</ul><!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
-</section></div> <!-- / div.lesson-content -->
+ --></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
       </div>
@@ -361,8 +521,8 @@ any links that you are not going to use.
   "url": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/reference.html",
   "identifier": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/reference.html",
   "dateCreated": "2026-10-27",
-  "dateModified": "2023-03-16",
-  "datePublished": "2026-11-10"
+  "dateModified": "2026-11-16",
+  "datePublished": "2026-11-16"
 }
 
   </script><script>

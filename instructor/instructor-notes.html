@@ -133,6 +133,8 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 <hr>
 <li><a class="dropdown-item" href="reference.html">Reference</a></li>
+<li><a class="dropdown-item" href="request-transcripts.html">Prepared Request Evidence</a></li>
+<li><a class="dropdown-item" href="worksheet.html">Observation Worksheet</a></li>
           </ul>
 </li>
       </ul>
@@ -257,7 +259,31 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="03-Data-File-StructuredInfo.html">2. Data, Files and Structured Information</a>
+        <a href="02-What-AI-Is-Building.html">2. Understanding What AI Is Building</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="03-Data-File-StructuredInfo.html">3. Data, Files and Structured Information</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="04-How-Web-Applications-Work.html">4. How Web Applications Work</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -311,6 +337,8 @@
                     <ul>
 <hr>
 <li><a class="dropdown-item" href="reference.html">Reference</a></li>
+<li><a class="dropdown-item" href="request-transcripts.html">Prepared Request Evidence</a></li>
+<li><a class="dropdown-item" href="worksheet.html">Observation Worksheet</a></li>
                     </ul>
 </div>
                 </div>
@@ -341,14 +369,317 @@
         <h1>Instructor Notes</h1>
         
 
-<p>This is a placeholder file. Please add content here.</p>
+<section><h2 class="section-heading" id="status-and-intended-audience">Status and intended audience<a class="anchor" aria-label="anchor" href="#status-and-intended-audience"></a>
+</h2>
+<hr class="half-width">
+<p>This is an initial teaching scaffold for a two-day course. Topics 1
+and 3 are existing contributions; Topics 2 and 4 extend them with
+prepared examples. Timings are estimates to revise after a novice
+walkthrough and pilot delivery. The intended learner has domain
+knowledge but little formal programming training.</p>
+<p>The outcome is to specify, explain, investigate, and assess small
+AI-generated programs. Learners are not expected to independently write
+a web back end, design class hierarchies, implement authentication, or
+deploy a production service.</p>
+</section><section><h2 class="section-heading" id="suggested-two-day-schedule">Suggested two-day schedule<a class="anchor" aria-label="anchor" href="#suggested-two-day-schedule"></a>
+</h2>
+<hr class="half-width">
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Time</th>
+<th>Day 1</th>
+<th>Day 2</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>09:00–09:20</td>
+<td>Welcome, expectations, readiness check</td>
+<td>Recap: inputs, behaviour, evidence</td>
+</tr>
+<tr>
+<td>09:20–10:20</td>
+<td>Topic 1: first half</td>
+<td>Topic 3: first half</td>
+</tr>
+<tr>
+<td>10:20–10:35</td>
+<td>Break</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>10:35–11:35</td>
+<td>Topic 1: second half</td>
+<td>Topic 3: second half</td>
+</tr>
+<tr>
+<td>11:35–12:00</td>
+<td>Guided practice and questions</td>
+<td>Guided practice and questions</td>
+</tr>
+<tr>
+<td>12:00–12:45</td>
+<td>Lunch</td>
+<td>Lunch</td>
+</tr>
+<tr>
+<td>12:45–14:00</td>
+<td>Topic 2: orientation and tracing</td>
+<td>Topic 4: parts and requests</td>
+</tr>
+<tr>
+<td>14:00–14:15</td>
+<td>Break</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>14:15–15:30</td>
+<td>Topic 2: reuse, settings, investigation</td>
+<td>Topic 4: storage, access, specification</td>
+</tr>
+<tr>
+<td>15:30–15:50</td>
+<td>Repair clinic or unfinished practice</td>
+<td>Architecture/specification clinic</td>
+</tr>
+<tr>
+<td>15:50–16:00</td>
+<td>Reflection and feedback</td>
+<td>Reflection and feedback</td>
+</tr>
+</tbody>
+</table>
+<p>Each new topic has 65 minutes of explanation/demonstration and 85
+minutes of exercises, including discussion and feedback. Practice
+periods are additional support, not hidden requirements for core
+exercises. Topic 2’s exit ticket is within its 150 minutes; final
+reflection reviews the broader course.</p>
+</section><section><h2 class="section-heading" id="preparation">Preparation<a class="anchor" aria-label="anchor" href="#preparation"></a>
+</h2>
+<hr class="half-width">
+<ol style="list-style-type: decimal">
+<li>Follow <a href="index.html#setup">learner setup</a> from a fresh extracted
+ZIP on the operating systems used in the workshop. Check Python 3.9+,
+SQLite, browser module loading, and browser storage. No packages need
+installing.</li>
+<li>Start <code>python3 episodes/files/serve.py</code> (Windows: replace
+<code>python3</code> with <code>py -3</code>). Keep it running for both
+examples. Check URLs, developer tools, and zoom.</li>
+<li>Use a fresh database or rename the previous one while the server is
+stopped. Default: <code>episodes/files/activities.sqlite3</code>. Reset
+task lists with each version’s Clear practice tasks button. Starter and
+solution store separately.</li>
+<li>Complete both lessons’ exercises yourself. Arrange a second
+browser/profile on the same laptop. Check restart persistence using the
+same database.</li>
+<li>Provide the ZIP, worksheet, and request transcripts before class.
+Print or download evidence for restricted devices or connectivity
+failures.</li>
+<li>Communicate AI account arrangements and the route without an
+account. Test any live generation beforehand.</li>
+<li>Organise helpers and shared notes. Invite learners to signal when
+they need help without requiring a public explanation.</li>
+</ol></section><section><h2 class="section-heading" id="teaching-approach">Teaching approach<a class="anchor" aria-label="anchor" href="#teaching-approach"></a>
+</h2>
+<hr class="half-width">
+<p>Introduce one small idea, model reading it, ask for a prediction,
+then run or inspect it together. Allow quiet thinking before pair
+discussion. Offer individual participation and rotate optional
+driver/navigator roles. Assess explanations and evidence rather than
+speed or exact syntax. Expand terms on first use and name the
+destination before switching windows.</p>
+<p>The prepared starter rejects empty descriptions but accepts spaces.
+Let learners predict and observe before revealing <code>.trim()</code>.
+The solution changes the validator only. Comparing a newly AI-generated
+version belongs in the clinic, after the common objectives are met.</p>
+<p>In Topic 4 move between browser action, selected request, response,
+and visible result. Keep <code>serve.py</code> implementation details in
+instructor discussion unless asked. The goal is reasoning across
+boundaries.</p>
+</section><section><h2 class="section-heading" id="formative-checks">Formative checks<a class="anchor" aria-label="anchor" href="#formative-checks"></a>
+</h2>
+<hr class="half-width">
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Check</th>
+<th>Evidence of intended understanding</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Locate validation</td>
+<td>Identifies <code>validateTask</code>, not CSS or storage code.</td>
+</tr>
+<tr>
+<td>Trace spaces</td>
+<td>Length is 3; starter returns true despite requirement.</td>
+</tr>
+<tr>
+<td>Return versus display</td>
+<td>Return reaches caller; <code>textContent</code> changes
+display.</td>
+</tr>
+<tr>
+<td>Recognise import</td>
+<td>
+<code>storage.js</code> is local; <code>JSON</code> is built in; no
+JS packages installed.</td>
+</tr>
+<tr>
+<td>Recognise class</td>
+<td>Distinguishes <code>Task</code>, <code>reading</code>, property,
+method.</td>
+</tr>
+<tr>
+<td>Inspect GET/POST</td>
+<td>Identifies method, path, payload, status, response.</td>
+</tr>
+<tr>
+<td>Invalid activity</td>
+<td>Spaces pass browser required check; server returns 400; no
+insertion.</td>
+</tr>
+<tr>
+<td>Persistence</td>
+<td>Tasks follow browser/profile and origin; activities follow
+server/database.</td>
+</tr>
+<tr>
+<td>Save versus display</td>
+<td>A GET can contain a record omitted by faulty rendering.</td>
+</tr>
+<tr>
+<td>Access scenario</td>
+<td>Requires server permission check; hiding a button is
+insufficient.</td>
+</tr>
+</tbody>
+</table>
+<p>Use the Topic 2 transfer question and Topic 4 specification as
+individual assessment before discussion. Invite one concept that now
+makes sense and one remaining question during reflection. Adjust
+explanations from those responses.</p>
+</section><section><h2 class="section-heading" id="fallback-delivery">Fallback delivery<a class="anchor" aria-label="anchor" href="#fallback-delivery"></a>
+</h2>
+<hr class="half-width">
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Constraint</th>
+<th>Equivalent participation</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>No AI account/service</td>
+<td>Describe intended change, then inspect prepared repair and repeat
+checks.</td>
+</tr>
+<tr>
+<td>Python cannot run</td>
+<td>Pair with working laptop or predict before projected
+demonstration.</td>
+</tr>
+<tr>
+<td>Developer tools inaccessible</td>
+<td>Annotate supplied request transcripts.</td>
+</tr>
+<tr>
+<td>Only one browser/profile</td>
+<td>Predict separate-browser results and compare prepared
+observations.</td>
+</tr>
+<tr>
+<td>Storage restricted</td>
+<td>Use permitted fresh profile or prepared observations.</td>
+</tr>
+<tr>
+<td>Time pressure</td>
+<td>Preserve prediction, repair, one request inspection, persistence
+reasoning, final specification.</td>
+</tr>
+</tbody>
+</table>
+<p>Class design, package installation, full login flows, SQL, and public
+deployment are extensions. Class recognition remains a short core
+activity.</p>
+</section><section><h2 class="section-heading" id="example-design-and-boundaries">Example design and boundaries<a class="anchor" aria-label="anchor" href="#example-design-and-boundaries"></a>
+</h2>
+<hr class="half-width">
+<p>The task manager is browser-side code with a local storage helper
+module. The server delivers assets but does not save tasks. Both
+versions support adding, completing/reopening, deleting, refreshing, and
+clearing practice data.</p>
+<p>The activity tracker uses Python’s standard HTTP and SQLite
+libraries, serves an explicit set of lesson assets, exposes GET/POST
+<code>/api/activities</code>, validates on the server, and persists
+accepted records. New records have a server-assigned ID and
+<code>completed: false</code>. The server binds only to loopback.</p>
+<p><code>ACTIVITY_DB</code> selects a database file for separate
+sessions. On macOS/Linux:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="va">ACTIVITY_DB</span><span class="op">=</span>/tmp/afternoon-activities.sqlite3 <span class="ex">python3</span> episodes/files/serve.py <span class="at">--port</span> 8001</span></code></pre>
+</div>
+<p>In PowerShell, set it before starting:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">POWERSHELL<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode powershell" tabindex="0"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="va">$env</span><span class="op">:</span><span class="va">ACTIVITY_DB</span> <span class="op">=</span> <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">TEMP</span><span class="st">/afternoon-activities.sqlite3"</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a>py <span class="op">-</span><span class="dv">3</span> episodes<span class="op">/</span>files<span class="op">/</span>serve<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>port <span class="dv">8001</span></span></code></pre>
+</div>
+<p>Use a new filename for fresh seed data. The parent directory must
+exist. Port changes also change the browser storage origin.</p>
+<p>This is a local teaching server, not a production deployment
+template. It has no login, roles, update/delete API, or
+concurrency-conflict exercise. Role and hosting scenarios are proposed
+requirements. The stale-display case is prepared evidence, not an
+intentional bug in the runnable activity tracker.</p>
+</section><section><h2 class="section-heading" id="author-checks-and-maintenance">Author checks and maintenance<a class="anchor" aria-label="anchor" href="#author-checks-and-maintenance"></a>
+</h2>
+<hr class="half-width">
+<p>From the repository root, rebuild the archive after changing examples
+or data:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="ex">python3</span> scripts/package-examples.py</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="ex">python3</span> scripts/check-examples.py</span></code></pre>
+</div>
+<p>The check script uses temporary storage and an ephemeral loopback
+port; it does not change practice records. A browser walkthrough is also
+needed to assess interaction, accessibility, and teaching flow. With
+<code>sandpaper</code> installed, run:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">sandpaper</span><span class="fu">::</span><span class="fu">validate_lesson</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">sandpaper</span><span class="fu">::</span><span class="fu">build_lesson</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<p>Inspect episode order, downloads, figure descriptions,
+challenge/solution nesting, learner/instructor views, and relative links
+in the rendered site. Do not edit generated files under
+<code>site/</code>.</p>
+<p>References: <a href="https://carpentries.github.io/sandpaper-docs/episodes.html" class="external-link">Workbench
+episode structure</a>, <a href="https://carpentries.github.io/instructor-training/05-memory.html" class="external-link">memory
+and cognitive load</a>, and <a href="https://carpentries.github.io/instructor-training/06-feedback.html" class="external-link">building
+skill with feedback</a>.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-      <section id="aggregate-instructor-notes"><section id="01-ideas-to-computational-problems"><h2 class="section-heading"><a href="01-ideas-to-computational-problems.html">From Ideas to Computational Problems</a></h2>
+</section><section id="aggregate-instructor-notes"><section id="01-ideas-to-computational-problems"><h2 class="section-heading"><a href="01-ideas-to-computational-problems.html">From Ideas to Computational Problems</a></h2>
 <hr class="half-width">
 <h3 id="01-ideas-to-computational-problems-headingInstructor1">
 <a href="01-ideas-to-computational-problems.html#headingInstructor1">Instructor Notes</a><a class="anchor" aria-label="anchor" href="#01-ideas-to-computational-problems-headingInstructor1"></a>
@@ -382,6 +713,30 @@ behavioural tests.</li>
 decisions, repetition, and main steps of a meal recommender that uses
 ingredients already available at home.</p>
 <hr>
+<br></section><section id="02-What-AI-Is-Building"><h2 class="section-heading"><a href="02-What-AI-Is-Building.html">Understanding What AI Is Building</a></h2>
+<hr class="half-width">
+<h3 id="02-What-AI-Is-Building-headingInstructor1">
+<a href="02-What-AI-Is-Building.html#headingInstructor1">Delivery notes</a><a class="anchor" aria-label="anchor" href="#02-What-AI-Is-Building-headingInstructor1"></a>
+</h3>
+<p>Use the four timing blocks above; challenge times include discussion
+and feedback. Keep each explanation short and let learners predict
+before running code. Give quiet thinking time before pair comparison;
+learners can also work alone. The reading snippets are selected
+portions, not instructions to type a whole app.</p>
+<p>Before class, test the starter and solution through the supplied
+server. Both normal and private-browser storage must be checked for the
+browsers you teach. If storage is disabled or contains malformed data,
+use a fresh browser profile or the prepared observation evidence rather
+than spending the lesson on repair.</p>
+<p>Misconceptions to revisit: defining a function calls it; returning
+displays; an import always means installing a package; an object
+requires a custom class; no exception means correct output; an AI
+explanation proves a change works.</p>
+<p>The classes example is recognition only. Package-management commands
+and class design are optional extensions. The core repair can be
+completed without an AI account by revealing the solution after a
+learner has explained the intended change. See the shared <a href="instructor-notes.html">instructor notes</a>.</p>
+<hr>
 <br></section><section id="03-Data-File-StructuredInfo"><h2 class="section-heading"><a href="03-Data-File-StructuredInfo.html">Data, Files and Structured Information</a></h2>
 <hr class="half-width">
 <h3 id="03-Data-File-StructuredInfo-headingInstructor1">
@@ -404,6 +759,29 @@ describe how to preserve leading zeros.</p>
 <p><strong>Timing:</strong> 85 minutes teaching and 35 minutes exercises
 (120 minutes total). For a shorter workshop, assign the independent
 challenge as homework.</p>
+<hr>
+<br></section><section id="04-How-Web-Applications-Work"><h2 class="section-heading"><a href="04-How-Web-Applications-Work.html">How Web Applications Work</a></h2>
+<hr class="half-width">
+<h3 id="04-How-Web-Applications-Work-headingInstructor1">
+<a href="04-How-Web-Applications-Work.html#headingInstructor1">Delivery notes</a><a class="anchor" aria-label="anchor" href="#04-How-Web-Applications-Work-headingInstructor1"></a>
+</h3>
+<p>Use the four timing blocks above, with a break after request
+inspection. The challenge allocations include feedback. Keep the server
+running for both examples; restarting with the same database must
+preserve added records.</p>
+<p>Demonstrate developer tools slowly, enlarge their text, and name the
+selected request before switching panels. Accept the request transcripts
+as equivalent evidence for learners who cannot use developer tools. No
+SQL, framework setup, public hosting account, or authentication
+implementation is required.</p>
+<p>Watch for: the browser is the whole app; a success message proves
+saving; localStorage is shared; refreshing restarts the server; a
+database must run on a separate machine; a domain provides hosting;
+hiding a button authorises access.</p>
+<p>The final challenge is a design assessment. Keep deployment and full
+login implementation as extensions. During the daily reflection, ask
+learners to explain the journey from clicking Save to the displayed
+result in their own words. See the <a href="instructor-notes.html">shared instructor notes</a>.</p>
 <hr>
 <br></section></section>
 </div>
@@ -455,8 +833,8 @@ challenge as homework.</p>
   "url": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/instructor-notes.html",
   "identifier": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/instructor-notes.html",
   "dateCreated": "2026-10-27",
-  "dateModified": "2026-11-10",
-  "datePublished": "2026-11-10"
+  "dateModified": "2026-11-16",
+  "datePublished": "2026-11-16"
 }
 
   </script><script>

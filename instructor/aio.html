@@ -133,6 +133,8 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 <hr>
 <li><a class="dropdown-item" href="reference.html">Reference</a></li>
+<li><a class="dropdown-item" href="request-transcripts.html">Prepared Request Evidence</a></li>
+<li><a class="dropdown-item" href="worksheet.html">Observation Worksheet</a></li>
           </ul>
 </li>
       </ul>
@@ -257,7 +259,31 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="03-Data-File-StructuredInfo.html">2. Data, Files and Structured Information</a>
+        <a href="02-What-AI-Is-Building.html">2. Understanding What AI Is Building</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="03-Data-File-StructuredInfo.html">3. Data, Files and Structured Information</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="04-How-Web-Applications-Work.html">4. How Web Applications Work</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -311,6 +337,8 @@
                     <ul>
 <hr>
 <li><a class="dropdown-item" href="reference.html">Reference</a></li>
+<li><a class="dropdown-item" href="request-transcripts.html">Prepared Request Evidence</a></li>
+<li><a class="dropdown-item" href="worksheet.html">Observation Worksheet</a></li>
                     </ul>
 </div>
                 </div>
@@ -421,7 +449,7 @@ questions with a partner.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Example discussion </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>What information is required to add a task?</li>
@@ -466,7 +494,7 @@ completed. Which steps must happen in a particular order?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <pre class="text"><code>1. User selects a task
 2. User clicks Complete
@@ -532,7 +560,7 @@ must remember. Which information should survive closing the browser?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The app remembers each item’s name and whether it has been purchased.
 If users expect to return later, the list and purchased statuses should
@@ -571,7 +599,7 @@ a warning; otherwise, display the task normally.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <pre class="text"><code>IF task_priority is "High"
     DISPLAY priority warning
@@ -614,7 +642,7 @@ that repeats:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Tasks 1 and 3 naturally involve repetition over collections. Tasks 2
 and 4 do not inherently require a loop.</p>
@@ -657,7 +685,7 @@ and calculates total spending.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p><code>validateAmount()</code>, <code>addExpense()</code>, and
 <code>calculateTotal()</code> are possible choices. Other sensible
@@ -704,7 +732,7 @@ operations use or change it, and where results go.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>Read description -&gt; validate description -&gt; save valid task
 -&gt; display updated list. If validation fails, show an error instead
@@ -802,7 +830,7 @@ if the task cannot be found.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
   <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <pre class="text"><code>WHEN user clicks Delete
     IDENTIFY selected task
@@ -935,7 +963,7 @@ from what you expected? How would you change your specification?</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Notes </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p><strong>Teaching approach:</strong> Build the task-manager workflow
 live with learners. Ask for predictions and learner suggestions before
@@ -996,7 +1024,955 @@ refine the specification when needed.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section><section id="aio-03-Data-File-StructuredInfo"><p>Content from <a href="03-Data-File-StructuredInfo.html">Data, Files and Structured Information</a></p>
+</section></section><section id="aio-02-What-AI-Is-Building"><p>Content from <a href="02-What-AI-Is-Building.html">Understanding What AI Is Building</a></p>
+<hr>
+<p>Last updated on 2026-11-16 |
+
+        <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/edit/main/episodes/02-What-AI-Is-Building.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 150 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Where should I look when an AI generates a collection of code
+files?</li>
+<li>How can I follow an input through a function and predict the
+result?</li>
+<li>How can I investigate a problem and verify an AI-assisted
+change?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Locate the code responsible for one behaviour in a small
+application.</li>
+<li>Trace arguments, parameters, conditions, return values, and changes
+to state.</li>
+<li>Distinguish local imports, third-party packages, built-in
+capabilities, and configuration.</li>
+<li>Recognise an object, a method call, and a simple class
+definition.</li>
+<li>Use observed behaviour and error messages to request and verify a
+focused change.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="from-describing-behaviour-to-inspecting-code">From describing behaviour to inspecting code<a class="anchor" aria-label="anchor" href="#from-describing-behaviour-to-inspecting-code"></a>
+</h2>
+<hr class="half-width">
+<p>In <a href="01-ideas-to-computational-problems.html">Topic 1</a>, we
+described a task manager using pseudocode. Now imagine the AI has
+returned several files. How can we check whether they implement our
+description?</p>
+<p>Our goal is to connect <strong>a requirement, the code responsible
+for it, and evidence of its behaviour</strong>. You do not need to
+memorise JavaScript syntax to make these connections. We use JavaScript
+because the earlier example already runs in a browser; the same
+questions apply to other languages.</p>
+<p>Open the task-manager <strong>starter</strong> using the <a href="index.html#setup">setup instructions</a>. The supplied files are a
+repeatable example of what an AI might generate. You may inspect your
+own generated version later, but use the supplied version for the shared
+exercises. It contains one deliberate validation bug.</p>
+<table class="table">
+<thead><tr>
+<th>Block</th>
+<th align="right">Explanation and demonstration</th>
+<th align="right">Exercises</th>
+<th align="right">Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Orient yourself</td>
+<td align="right">15 min</td>
+<td align="right">15 min</td>
+<td align="right">30 min</td>
+</tr>
+<tr>
+<td>Follow one operation</td>
+<td align="right">20 min</td>
+<td align="right">25 min</td>
+<td align="right">45 min</td>
+</tr>
+<tr>
+<td>Reused code and settings</td>
+<td align="right">15 min</td>
+<td align="right">20 min</td>
+<td align="right">35 min</td>
+</tr>
+<tr>
+<td>Investigate and verify</td>
+<td align="right">15 min</td>
+<td align="right">25 min</td>
+<td align="right">40 min</td>
+</tr>
+</tbody>
+</table>
+<p>Take a break after the second block. Break time is additional to
+these estimates.</p>
+</section><section><h2 class="section-heading" id="orient-yourself-what-are-these-files">1. Orient yourself: what are these files?<a class="anchor" aria-label="anchor" href="#orient-yourself-what-are-these-files"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Source code</strong> is the human-readable instructions used
+to build or run software. A <strong>script</strong> is a file containing
+instructions executed by a language runtime, such as the browser’s
+JavaScript engine or Python. Some software must first be translated or
+built before it runs.</p>
+<p>Our task-manager example has these responsibilities:</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>File</th>
+<th>Responsibility</th>
+<th>A question it helps answer</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>starter/index.html</code></td>
+<td>Page structure, labels, inputs, and buttons</td>
+<td>Where is the task-description input?</td>
+</tr>
+<tr>
+<td><code>style.css</code></td>
+<td>Presentation</td>
+<td>Why do buttons look this way?</td>
+</tr>
+<tr>
+<td><code>starter/app.js</code></td>
+<td>Validate, add, display, complete, and delete tasks</td>
+<td>Why was this description accepted?</td>
+</tr>
+<tr>
+<td><code>storage.js</code></td>
+<td>Load and save tasks in this browser</td>
+<td>Why are tasks present after refreshing?</td>
+</tr>
+</tbody>
+</table>
+<p>For now, use filenames to identify responsibilities. We will explore
+directories and paths more systematically in <a href="03-Data-File-StructuredInfo.html">Topic 3</a>.</p>
+<p>A file can contain <strong>comments</strong>: notes for people
+reading the code. In JavaScript, <code>//</code> begins a one-line
+comment. Comments and AI explanations are useful clues; we still check
+the instructions that actually run.</p>
+<div id="first-look-state-your-expectations-5-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="first-look-state-your-expectations-5-minutes" class="callout-inner">
+<h3 class="callout-title">First look: state your expectations (5
+minutes)</h3>
+<div class="callout-content">
+<p>Before opening the code, write the expected result of:</p>
+<ol style="list-style-type: decimal">
+<li>Adding <code>Read paper</code>.</li>
+<li>Adding an empty description.</li>
+<li>Adding a description containing only three spaces.</li>
+</ol>
+<p>Use Topic 1’s requirement: reject empty or whitespace-only
+descriptions. Do not run the cases yet. Keep your predictions for the
+next block.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>One new task should appear.</li>
+<li>No task should be added; a helpful message should appear.</li>
+<li>No task should be added; a helpful message should appear.</li>
+</ol>
+<p>These are requirements, not claims about the starter’s actual
+behaviour.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="start-with-a-behaviour-then-find-its-route">Start with a behaviour, then find its route<a class="anchor" aria-label="anchor" href="#start-with-a-behaviour-then-find-its-route"></a>
+</h3>
+<p>The HTML loads <code>app.js</code> using a script element. In
+<code>app.js</code>, some instructions run when the module loads, while
+<strong>event handlers</strong> run in response to actions. A function
+definition names a job; defining the function does not itself do that
+job.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a>form<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"submit"</span><span class="op">,</span> (<span class="bu">event</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a>  <span class="bu">event</span><span class="op">.</span><span class="fu">preventDefault</span>()<span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a>  <span class="fu">addTask</span>(input<span class="op">.</span><span class="at">value</span>)<span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a>})<span class="op">;</span></span></code></pre>
+</div>
+<p>Read this as: “When the form is submitted, prevent its default page
+navigation, read the input value, and call <code>addTask</code> with
+that value.” The arrow <code>=&gt;</code> introduces a function here.
+You only need to recognise its role.</p>
+<p>The route we will inspect is:</p>
+<pre class="text"><code>Submit the form
+    -&gt; read input.value
+    -&gt; addTask(description)
+    -&gt; validateTask(description)
+    -&gt; save and display, OR show a message</code></pre>
+<div id="map-a-behaviour-to-the-code-10-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="map-a-behaviour-to-the-code-10-minutes" class="callout-inner">
+<h3 class="callout-title">Map a behaviour to the code (10 minutes)</h3>
+<div class="callout-content">
+<p>Open <code>starter/app.js</code> in an editor. Find:</p>
+<ol style="list-style-type: decimal">
+<li>The function that decides whether a description is accepted.</li>
+<li>The instruction that saves the task list.</li>
+<li>The function that updates the displayed list.</li>
+<li>The event handler that connects the form to adding a task.</li>
+</ol>
+<p>Compare your findings with a partner. Name a function you would
+inspect first if tasks saved correctly but did not appear on screen.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>
+<code>validateTask</code>.</li>
+<li>
+<code>saveTasks(tasks)</code>.</li>
+<li>
+<code>displayTasks</code>.</li>
+<li>The <code>form.addEventListener("submit", ...)</code> block.</li>
+</ol>
+<p>Start with <code>displayTasks</code> for a display problem, while
+remaining open to evidence that an earlier operation supplied the wrong
+information.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="follow-one-operation">2. Follow one operation<a class="anchor" aria-label="anchor" href="#follow-one-operation"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="parameters-arguments-and-return-values">Parameters, arguments, and return values<a class="anchor" aria-label="anchor" href="#parameters-arguments-and-return-values"></a>
+</h3>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="kw">function</span> <span class="fu">validateTask</span>(description) {</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a>  <span class="cf">return</span> description<span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a>}</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1" aria-label="code-block-3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1" aria-label="code-block-3-5"></a><span class="fu">validateTask</span>(<span class="st">"Read paper"</span>)<span class="op">;</span></span></code></pre>
+</div>
+<ul>
+<li>
+<code>description</code> is a <strong>parameter</strong>: a name for
+information the function receives.</li>
+<li>
+<code>"Read paper"</code> is an <strong>argument</strong>: the
+actual value supplied by this call.</li>
+<li>
+<code>.length</code> gives the number of characters in this string,
+including spaces.</li>
+<li>
+<code>&gt;</code> compares values. Here, the comparison produces
+<code>true</code> or <code>false</code>.</li>
+<li>
+<code>return</code> sends a value back to the caller and ends that
+function call.</li>
+</ul>
+<p>Returning a value does not automatically display or save it. The
+caller decides what to do with the value. A function can also change
+something outside itself, such as a displayed message or saved data;
+this is often called a <strong>side effect</strong>.</p>
+<div id="trace-the-validator-10-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="trace-the-validator-10-minutes" class="callout-inner">
+<h3 class="callout-title">Trace the validator (10 minutes)</h3>
+<div class="callout-content">
+<p>Complete this table without running the code. Represent three spaces
+as <code>"   "</code>.</p>
+<table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr>
+<th>Argument</th>
+<th>Value of <code>description.length</code>
+</th>
+<th>Returned value</th>
+<th>Matches requirement?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>"Read paper"</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>""</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>"   "</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Where do the behaviour of the code and the requirement diverge?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<table class="table">
+<thead><tr>
+<th>Argument</th>
+<th align="right">Length</th>
+<th>Return</th>
+<th>Matches requirement?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>"Read paper"</code></td>
+<td align="right">10</td>
+<td><code>true</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>""</code></td>
+<td align="right">0</td>
+<td><code>false</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>"   "</code></td>
+<td align="right">3</td>
+<td><code>true</code></td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Spaces count as characters. The starter checks length, not meaningful
+content.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="conditions-early-returns-and-state">Conditions, early returns, and state<a class="anchor" aria-label="anchor" href="#conditions-early-returns-and-state"></a>
+</h3>
+<p>The beginning of <code>addTask</code> reads:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="kw">function</span> <span class="fu">addTask</span>(description) {</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="fu">validateTask</span>(description)) {</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a>    message<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"Please enter a task."</span><span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1" aria-label="code-block-4-4"></a>    <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1" aria-label="code-block-4-5"></a>  }</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1" aria-label="code-block-4-6"></a>  <span class="co">// The remaining instructions create, save, and display the task.</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1" aria-label="code-block-4-7"></a>}</span></code></pre>
+</div>
+<p><code>!</code> means “not”. If validation returns <code>false</code>,
+the condition is true and we enter the block. The bare
+<code>return;</code> ends <code>addTask</code> without a useful return
+value. It prevents the later saving instructions from running.</p>
+<p>When validation succeeds, <code>tasks.push(task)</code> adds an item
+to the in-memory list. <code>saveTasks(tasks)</code> writes a stored
+representation. <code>displayTasks()</code> rebuilds the visible list
+using a loop. <strong>Changing state, saving it, and displaying it are
+separate operations.</strong></p>
+<div id="return-or-display-5-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="return-or-display-5-minutes" class="callout-inner">
+<h3 class="callout-title">Return or display? (5 minutes)</h3>
+<div class="callout-content">
+<p>A learner says: “<code>validateTask</code> returns
+<code>false</code>, so the user sees <code>false</code>.” Explain what
+actually happens when <code>addTask("")</code> runs. Which function ends
+at each <code>return</code>? Does <code>saveTasks</code> run?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+<p>The <code>return false</code> ends the call to
+<code>validateTask</code>. The caller uses that value in its condition.
+<code>addTask</code> changes the visible message to “Please enter a
+task.” and its bare <code>return</code> ends <code>addTask</code>.
+<code>saveTasks</code> does not run for this input.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="compare-prediction-with-observation-10-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="compare-prediction-with-observation-10-minutes" class="callout-inner">
+<h3 class="callout-title">Compare prediction with observation (10
+minutes)</h3>
+<div class="callout-content">
+<p>In the starter, click <strong>Clear practice tasks</strong>. Try the
+three inputs from your prediction table. Record the visible message and
+number of tasks after each case. Spaces may produce a task with no
+visible description; count the task rows or their Delete buttons. Delete
+this practice row afterwards.</p>
+<p>For a normal task, also try Complete and refresh the page. Separate
+the evidence that the display changed from the evidence that the
+completion status was saved.</p>
+<p>Use the <a href="worksheet.html">observation worksheet</a> if
+useful.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div class="accordion-body">
+<p>The normal description adds a task. The empty description produces a
+message without adding a task. Three spaces incorrectly add a task.
+Completing changes the display; seeing the completed status after
+refresh is evidence of saving and reloading in this browser. It does not
+establish sharing with another browser.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="recognise-reused-code-and-settings">3. Recognise reused code and settings<a class="anchor" aria-label="anchor" href="#recognise-reused-code-and-settings"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="imports-are-clues-about-dependencies">Imports are clues about dependencies<a class="anchor" aria-label="anchor" href="#imports-are-clues-about-dependencies"></a>
+</h3>
+<p>At the beginning of the supplied <code>app.js</code>:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="im">import</span> { loadTasks<span class="op">,</span> saveTasks } <span class="im">from</span> <span class="st">"../storage.js"</span><span class="op">;</span></span></code></pre>
+</div>
+<p>This imports functions from another <strong>local module</strong>. A
+module groups code that can be reused elsewhere. A
+<strong>library</strong> provides reusable capabilities; a
+<strong>package</strong> is a distributable unit of code and associated
+information. A third-party package may supply a library, but this
+example needs no installed JavaScript packages.</p>
+<p><code>localStorage</code>, <code>JSON</code>, and browser page
+operations are built-in browser capabilities. They do not need a package
+installation. A different project might import third-party code and list
+required packages in a file such as <code>package.json</code>. Ask which
+runtime and dependencies the project needs before following generated
+installation instructions.</p>
+<p>The word <strong>dependency</strong> has two related uses: Topic 1
+described steps that depend on earlier steps; here we also mean software
+that other code requires.</p>
+<div id="sort-the-responsibilities-10-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="sort-the-responsibilities-10-minutes" class="callout-inner">
+<h3 class="callout-title">Sort the responsibilities (10 minutes)</h3>
+<div class="callout-content">
+<p>Match each item to application code, local imported code, built-in
+capability, or third-party package. Identify which item is absent from
+our task manager.</p>
+<ol style="list-style-type: decimal">
+<li>
+<code>validateTask</code> in <code>app.js</code>.</li>
+<li>
+<code>saveTasks</code> supplied by <code>storage.js</code>.</li>
+<li>
+<code>JSON.stringify</code> and
+<code>localStorage.setItem</code>.</li>
+<li>A separately installed charting library used by a different
+dashboard.</li>
+</ol>
+<p>If an AI says “the import failed”, what information would you request
+before asking it to rewrite the application?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>Application code. 2. Local imported code. 3. Built-in
+capabilities.</li>
+<li>Third-party package; absent from our example.</li>
+</ol>
+<p>Ask for the exact error, import statement, module location or package
+name, and the way the app was launched. A local import failure is not
+proof that an additional package needs installing. For example, opening
+this app as a local <code>file://</code> page instead of through the
+supplied server can prevent module loading.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="objects-properties-methods-and-classes-recognition">Objects, properties, methods, and classes: recognition<a class="anchor" aria-label="anchor" href="#objects-properties-methods-and-classes-recognition"></a>
+</h3>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="kw">const</span> task <span class="op">=</span> { <span class="dt">description</span><span class="op">:</span> <span class="st">"Read paper"</span><span class="op">,</span> <span class="dt">completed</span><span class="op">:</span> <span class="kw">false</span> }<span class="op">;</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1" aria-label="code-block-6-2"></a>task<span class="op">.</span><span class="at">completed</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span></code></pre>
+</div>
+<p>An <strong>object</strong> can group named values. Here
+<code>description</code> and <code>completed</code> are
+<strong>properties</strong>. A function accessed through an object is
+called a <strong>method</strong>; for example,
+<code>tasks.push(task)</code> calls the array’s <code>push</code>
+method.</p>
+<p>A <strong>class</strong> describes a way to create objects with
+related data and behaviour:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="co">// Recognition example only: the supplied task manager does not need a class.</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1" aria-label="code-block-7-2"></a><span class="kw">class</span> Task {</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a>  <span class="fu">constructor</span>(description) {</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1" aria-label="code-block-7-4"></a>    <span class="kw">this</span><span class="op">.</span><span class="at">description</span> <span class="op">=</span> description<span class="op">;</span></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1" aria-label="code-block-7-5"></a>    <span class="kw">this</span><span class="op">.</span><span class="at">completed</span> <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1" aria-label="code-block-7-6"></a>  }</span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1" aria-label="code-block-7-7"></a>  <span class="fu">complete</span>() {</span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1" aria-label="code-block-7-8"></a>    <span class="kw">this</span><span class="op">.</span><span class="at">completed</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1" aria-label="code-block-7-9"></a>  }</span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1" aria-label="code-block-7-10"></a>}</span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1" aria-label="code-block-7-11"></a><span class="kw">const</span> reading <span class="op">=</span> <span class="kw">new</span> <span class="fu">Task</span>(<span class="st">"Read paper"</span>)<span class="op">;</span></span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1" aria-label="code-block-7-12"></a>reading<span class="op">.</span><span class="fu">complete</span>()<span class="op">;</span></span></code></pre>
+</div>
+<p><code>reading</code> is an <strong>instance</strong> of
+<code>Task</code>. You do not need to design classes here. Both examples
+represent a task, and objects can exist without a class we define.</p>
+<div id="recognise-the-pieces-5-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="recognise-the-pieces-5-minutes" class="callout-inner">
+<h3 class="callout-title">Recognise the pieces (5 minutes)</h3>
+<div class="callout-content">
+<p>In the class example, identify the class, instance, one property, and
+one method. What is <code>reading.completed</code> after the last line?
+Does the snippet save anything to persistent storage?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
+</button>
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div class="accordion-body">
+<p>Class: <code>Task</code>; instance: <code>reading</code>; property:
+<code>description</code> or <code>completed</code>; method:
+<code>complete</code>. The final completed value is <code>true</code>.
+There is no storage operation, so this change alone does not establish
+persistence.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="configuration-and-environment-variables">Configuration and environment variables<a class="anchor" aria-label="anchor" href="#configuration-and-environment-variables"></a>
+</h3>
+<p><strong>Configuration</strong> changes settings without rewriting the
+main behaviour. An <strong>environment variable</strong> is a named
+setting passed to a running process by its surrounding environment. It
+is different from a variable inside a function.</p>
+<p>In Topic 4’s Python server, <code>ACTIVITY_DB</code> can select the
+database file. Without that setting, the server uses its documented
+default. A code example might read:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a>database <span class="op">=</span> os.environ.get(<span class="st">"ACTIVITY_DB"</span>, <span class="st">"activities.sqlite3"</span>)</span></code></pre>
+</div>
+<p>You only need to read this as “use the environment setting if
+present; otherwise use this filename.” The actual server also resolves
+the default location. Environment changes normally affect a process when
+it starts, so restart it after changing its settings.</p>
+<p>Some settings hold credentials. Putting a secret in browser-delivered
+code or in a browser build setting makes it available to the browser’s
+user. Calling a value an environment variable does not automatically
+keep it private.</p>
+<div id="which-setting-belongs-where-5-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="which-setting-belongs-where-5-minutes" class="callout-inner">
+<h3 class="callout-title">Which setting belongs where? (5 minutes)</h3>
+<div class="callout-content">
+<p>For each requirement, identify whether you would inspect application
+logic, presentation, or configuration:</p>
+<ol style="list-style-type: decimal">
+<li>Reject descriptions containing only spaces.</li>
+<li>Change button spacing.</li>
+<li>Store the server’s practice database in a different file.</li>
+</ol>
+<p>Would a real private service key belong in a JavaScript file
+downloaded by users?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
+  <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
+</button>
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>Validation logic. 2. CSS presentation. 3. Server configuration, such
+as <code>ACTIVITY_DB</code>. A private key must not be delivered to the
+browser; a server can hold it and expose only the operations users are
+allowed to request.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="investigate-a-problem-and-verify-a-change">4. Investigate a problem and verify a change<a class="anchor" aria-label="anchor" href="#investigate-a-problem-and-verify-a-change"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="different-failures-need-different-evidence">Different failures need different evidence<a class="anchor" aria-label="anchor" href="#different-failures-need-different-evidence"></a>
+</h3>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Situation</th>
+<th>Example</th>
+<th>Useful evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Syntax error: code cannot be parsed</td>
+<td>A missing closing quote</td>
+<td>File, line, and parser message</td>
+</tr>
+<tr>
+<td>Runtime error or exception: an operation fails while running</td>
+<td>Reading <code>.length</code> from <code>null</code>
+</td>
+<td>Error type, message, relevant call, and input</td>
+</tr>
+<tr>
+<td>Behaviour differs from the requirement</td>
+<td>Spaces become a saved task</td>
+<td>Expected result, actual result, reproducible input</td>
+</tr>
+</tbody>
+</table>
+<p>An <strong>exception</strong> interrupts normal execution unless
+handled. A <strong>stack trace</strong> shows a chain of calls
+associated with an error. Start with the error message and the first
+relevant location in your own code. Exact wording varies between
+browsers and versions.</p>
+<p>Invalid user input can instead be an anticipated outcome: our
+empty-description message is deliberate validation, not a thrown
+exception. Likewise, a program can finish without an exception and still
+produce the wrong result.</p>
+<div id="read-the-evidence-8-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="read-the-evidence-8-minutes" class="callout-inner">
+<h3 class="callout-title">Read the evidence (8 minutes)</h3>
+<div class="callout-content">
+<p>These are separate prepared examples, not all failures in the
+starter:</p>
+<pre class="text"><code>A. SyntaxError: Invalid or unexpected token
+   app.js:12
+
+B. TypeError: Cannot read properties of null (reading 'length')
+   at validateTask (app.js:10)
+   at addTask (app.js:14)
+
+C. Expected: no task added for "   "
+   Observed: task count increased from 1 to 2; no console error</code></pre>
+<p>Classify each failure. For B, which value would you investigate
+first? Would removing validation entirely resolve the requirement
+demonstrated by C?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
+  <h4 class="accordion-header" id="headingSolution9"> Show me the solution </h4>
+</button>
+<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div class="accordion-body">
+<p>A: syntax error. B: runtime exception; investigate how
+<code>null</code> reached the description parameter. C: incorrect
+behaviour. Removing validation might hide symptoms but would allow more
+invalid tasks; it would not satisfy the requirement. Line numbers here
+illustrate how to locate evidence, not the current source layout.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="request-a-focused-change">Request a focused change<a class="anchor" aria-label="anchor" href="#request-a-focused-change"></a>
+</h3>
+<p>Prefer an evidence-based request over “fix the app”:</p>
+<blockquote>
+<p>In the task-manager starter, <code>validateTask</code> rejects an
+empty string but accepts three spaces. Both should be rejected. Change
+the validator to reject empty or whitespace-only descriptions. Keep
+adding, completing, deleting, and saving tasks working. Explain the
+cause, show the changed lines, and give checks for a normal description,
+an empty string, and spaces only. Avoid extra features.</p>
+</blockquote>
+<p>An AI explanation is a proposal to check. Review the changed lines
+and run the cases yourself. If the response replaces many unrelated
+files, ask why the change needs that scope before accepting it.</p>
+<div id="repair-and-verify-12-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="repair-and-verify-12-minutes" class="callout-inner">
+<h3 class="callout-title">Repair and verify (12 minutes)</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li>Keep a copy of the starter or use the supplied solution as a
+comparison.</li>
+<li>Ask an AI assistant for the targeted change above. Without an
+assistant, propose the change in plain language, then reveal the
+solution.</li>
+<li>Inspect the changed lines. Do they implement the stated rule?</li>
+<li>Repeat the three validation cases. Also complete and delete a normal
+task, and refresh to check saving.</li>
+<li>Record one observation that could disprove the claim “the repair
+works”.</li>
+</ol>
+<p>If editing the supplied files, reload the page to load the edited
+JavaScript. The starter and solution have separate practice lists.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution10" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution10" aria-expanded="false" aria-controls="collapseSolution10">
+  <h4 class="accordion-header" id="headingSolution10"> Show me the solution </h4>
+</button>
+<div id="collapseSolution10" class="accordion-collapse collapse" aria-labelledby="headingSolution10" data-bs-parent="#accordionSolution10">
+<div class="accordion-body">
+<p>One focused repair is:</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="kw">function</span> <span class="fu">validateTask</span>(description) {</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1" aria-label="code-block-10-2"></a>  <span class="cf">return</span> description<span class="op">.</span><span class="fu">trim</span>()<span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1" aria-label="code-block-10-3"></a>}</span></code></pre>
+</div>
+<p><code>trim()</code> returns a string without surrounding whitespace.
+It does not change the original description. A normal description is
+accepted; empty and whitespace-only strings are rejected. The <a href="../files/task-manager/solution/app.js">solution source</a> contains
+this repair. Check the browser app using the solution URL in setup.</p>
+<p>Adding a whitespace-only task after repair would disprove the claim.
+Failure to complete, delete, or reload a valid task would show another
+behaviour changed.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="exit-ticket-transfer-the-reasoning-5-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="exit-ticket-transfer-the-reasoning-5-minutes" class="callout-inner">
+<h3 class="callout-title">Exit ticket: transfer the reasoning (5
+minutes)</h3>
+<div class="callout-content">
+<p>This independent example checks hours worked:</p>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">JAVASCRIPT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode javascript" tabindex="0"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1" tabindex="-1" aria-label="code-block-11-1"></a><span class="kw">function</span> <span class="fu">validHours</span>(hours) {</span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1" aria-label="code-block-11-2"></a>  <span class="cf">return</span> hours <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> hours <span class="op">&lt;=</span> <span class="dv">24</span><span class="op">;</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1" aria-label="code-block-11-3"></a>}</span></code></pre>
+</div>
+<p><code>&amp;&amp;</code> means “and”. Identify the parameter and
+possible returned values. Predict the results for <code>0</code>,
+<code>2.5</code>, and <code>25</code>. Name one boundary case to check.
+Does this function save or display anything? Explain without asking an
+AI assistant.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution11" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution11" aria-expanded="false" aria-controls="collapseSolution11">
+  <h4 class="accordion-header" id="headingSolution11"> Show me the solution </h4>
+</button>
+<div id="collapseSolution11" class="accordion-collapse collapse" aria-labelledby="headingSolution11" data-bs-parent="#accordionSolution11">
+<div class="accordion-body">
+<p>Parameter: <code>hours</code>. Return: a Boolean (<code>true</code>
+or <code>false</code>). Results: <code>false</code>, <code>true</code>,
+<code>false</code>. Useful boundary cases include <code>24</code>
+(accepted) and a value just above <code>24</code> (rejected). This
+function neither saves nor displays data. A complete validator would
+also need agreed rules about types and missing values.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Delivery notes </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Use the four timing blocks above; challenge times include discussion
+and feedback. Keep each explanation short and let learners predict
+before running code. Give quiet thinking time before pair comparison;
+learners can also work alone. The reading snippets are selected
+portions, not instructions to type a whole app.</p>
+<p>Before class, test the starter and solution through the supplied
+server. Both normal and private-browser storage must be checked for the
+browsers you teach. If storage is disabled or contains malformed data,
+use a fresh browser profile or the prepared observation evidence rather
+than spending the lesson on repair.</p>
+<p>Misconceptions to revisit: defining a function calls it; returning
+displays; an import always means installing a package; an object
+requires a custom class; no exception means correct output; an AI
+explanation proves a change works.</p>
+<p>The classes example is recognition only. Package-management commands
+and class design are optional extensions. The core repair can be
+completed without an AI account by revealing the solution after a
+learner has explained the intended change. See the shared <a href="instructor-notes.html">instructor notes</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Connect a requirement to the responsible code and a behavioural
+check.</li>
+<li>A parameter names an input; an argument supplies it; a return value
+goes to the caller.</li>
+<li>Validation, state changes, persistent storage, and display are
+separate operations.</li>
+<li>Imports can refer to local code; built-in capabilities and
+third-party packages differ.</li>
+<li>Objects group properties and methods; classes are one way to create
+objects.</li>
+<li>Configuration changes settings; environment variables are supplied
+to a process.</li>
+<li>Errors and incorrect behaviour need evidence, a focused change, and
+independent checks.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="further-reading">Further reading<a class="anchor" aria-label="anchor" href="#further-reading"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" class="external-link">MDN:
+JavaScript functions</a>.</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" class="external-link">MDN:
+JavaScript modules</a>.</li>
+</ul>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ --></section></section><section id="aio-03-Data-File-StructuredInfo"><p>Content from <a href="03-Data-File-StructuredInfo.html">Data, Files and Structured Information</a></p>
 <hr>
 <p>Last updated on 2026-10-27 |
 
@@ -1721,7 +2697,914 @@ transformation rules, and acceptance checks.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section>
+</section></section><section id="aio-04-How-Web-Applications-Work"><p>Content from <a href="04-How-Web-Applications-Work.html">How Web Applications Work</a></p>
+<hr>
+<p>Last updated on 2026-11-16 |
+
+        <a href="https://github.com/gvbhalerao591/programming-for-vibe-coding/edit/main/episodes/04-How-Web-Applications-Work.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 150 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What happens between clicking a button and seeing a result?</li>
+<li>What runs in the browser, what runs on a server, and where is data
+stored?</li>
+<li>What must we specify before asking an AI to build an application for
+other people?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Assign browser, front-end, back-end, server, and database
+responsibilities.</li>
+<li>Trace an HTTP request and response using browser tools or a prepared
+transcript.</li>
+<li>Distinguish in-memory state, browser storage, and server-side
+persistent storage.</li>
+<li>Separate authentication from authorisation and identify checks that
+belong on a server.</li>
+<li>Specify a small shared application, including storage, access, and
+failure checks.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="from-a-working-page-to-a-working-system">From a working page to a working system<a class="anchor" aria-label="anchor" href="#from-a-working-page-to-a-working-system"></a>
+</h2>
+<hr class="half-width">
+<p>In <a href="02-What-AI-Is-Building.html">Topic 2</a>, we followed a
+value through code. In <a href="03-Data-File-StructuredInfo.html">Topic
+3</a>, we described records and file formats. Now we follow a record
+through a web application.</p>
+<p>An application can look convincing while saving nothing, keeping data
+only in one browser, or allowing the wrong people to change records.
+“Build me an app” leaves these choices open. Knowing the parts helps us
+specify and investigate them.</p>
+<p>Use the activity tracker from the <a href="index.html#setup">setup
+instructions</a>. It begins with the same three synthetic research
+activities used in Topic 3. It runs on your laptop with a small Python
+server and a SQLite database. You do not need to read the Python
+implementation or write database queries today.</p>
+<table class="table">
+<thead><tr>
+<th>Block</th>
+<th align="right">Explanation and demonstration</th>
+<th align="right">Exercises</th>
+<th align="right">Total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Identify the parts</td>
+<td align="right">15 min</td>
+<td align="right">20 min</td>
+<td align="right">35 min</td>
+</tr>
+<tr>
+<td>Follow a request</td>
+<td align="right">15 min</td>
+<td align="right">25 min</td>
+<td align="right">40 min</td>
+</tr>
+<tr>
+<td>Locate state and storage</td>
+<td align="right">20 min</td>
+<td align="right">20 min</td>
+<td align="right">40 min</td>
+</tr>
+<tr>
+<td>Specify access and sharing</td>
+<td align="right">15 min</td>
+<td align="right">20 min</td>
+<td align="right">35 min</td>
+</tr>
+</tbody>
+</table>
+<p>Take a break after the second block. Break time is additional to
+these estimates.</p>
+</section><section><h2 class="section-heading" id="identify-the-parts">1. Identify the parts<a class="anchor" aria-label="anchor" href="#identify-the-parts"></a>
+</h2>
+<hr class="half-width">
+<p>The <strong>client</strong> requests something from another program.
+Here the client is a web <strong>browser</strong>. The <strong>front
+end</strong> is the part users interact with in the browser. HTML
+describes structure, CSS controls presentation, and JavaScript can
+respond to actions and request data.</p>
+<p>A <strong>server</strong> is a program that receives requests and
+sends responses; we also use the word for the computer running it. The
+<strong>back end</strong> carries out server-side work, such as checking
+a submitted record and deciding whether to save it.</p>
+<p>A <strong>database</strong> stores organised data and supports
+operations to retrieve and change it. Our database is a SQLite file used
+by the back end. The browser does not open that file directly: it asks
+the server to perform an operation.</p>
+<figure><img src="../fig/web-application.svg" alt="The browser sends a request to the server; the server reads or writes a database and returns a response. The browser then updates its display." class="figure mx-auto d-block"><div class="figcaption">The browser sends a request to the server; the
+server reads or writes a database and returns a response. The browser
+then updates its display.</div>
+</figure><p>The same laptop can run both browser and server. These are still
+separate programs with separate responsibilities. In a deployed
+application, the server will often run on a different computer.</p>
+<div class="section level3">
+<h3 id="compare-our-two-examples">Compare our two examples<a class="anchor" aria-label="anchor" href="#compare-our-two-examples"></a>
+</h3>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Responsibility</th>
+<th>Task manager</th>
+<th>Activity tracker</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Download page, styles, and JavaScript</td>
+<td>Local teaching server</td>
+<td>Local teaching server</td>
+</tr>
+<tr>
+<td>Respond to form submission</td>
+<td>Browser JavaScript</td>
+<td>Browser JavaScript</td>
+</tr>
+<tr>
+<td>Validate input</td>
+<td>Browser</td>
+<td>Browser checks plus server validation</td>
+</tr>
+<tr>
+<td>Store records</td>
+<td>This browser’s <code>localStorage</code>
+</td>
+<td>SQLite file used by the server</td>
+</tr>
+<tr>
+<td>Obtain records</td>
+<td>Read browser storage</td>
+<td>Request records from the server</td>
+</tr>
+</tbody>
+</table>
+<p>The task manager uses a server to obtain its files, but its task
+operations run entirely in the browser. It does not send tasks to the
+activity API. A browser application does not always need a data back end
+or database server.</p>
+<div id="who-does-this-job-10-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="who-does-this-job-10-minutes" class="callout-inner">
+<h3 class="callout-title">Who does this job? (10 minutes)</h3>
+<div class="callout-content">
+<p>Assign each job to the browser/front end, back end, or database. Some
+operations involve more than one part: explain the hand-off.</p>
+<ol style="list-style-type: decimal">
+<li>Display a Save button.</li>
+<li>Send a proposed activity and its hours.</li>
+<li>Reject a record with hours greater than 24, even if browser checks
+are bypassed.</li>
+<li>Keep the accepted activity after the server restarts.</li>
+<li>Display the saved activity in the list.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>Browser/front end. 2. Browser sends a request to the back end.</li>
+<li>Back end validates before writing. 4. Back end writes to persistent
+database storage; the database file survives this server restart. 5.
+Browser uses returned records to update the display. Storing a record
+does not itself redraw a page.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="draw-the-data-journey-10-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="draw-the-data-journey-10-minutes" class="callout-inner">
+<h3 class="callout-title">Draw the data journey (10 minutes)</h3>
+<div class="callout-content">
+<p>Draw three boxes: browser, server, database. A researcher enters
+<code>Read methods</code> and <code>1.5</code> hours, then clicks Save.
+Add arrows and labels showing the expected journey. Where would you look
+if the activity was saved but did not appear?</p>
+<p>Compare with a partner. Can you explain each arrow without saying
+“the app does it”?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Browser sends proposed record -&gt; server validates -&gt; server
+writes database -&gt; server confirms save -&gt; browser requests the
+updated list -&gt; server reads the database and responds -&gt; browser
+displays records.</p>
+<p>This supplied implementation uses a second request to reload the list
+after saving. Other implementations might update the display from the
+save response. For a saved-but-invisible record, inspect list loading
+and display as well as the save response; gather evidence before
+choosing a cause.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="follow-a-request-and-response">2. Follow a request and response<a class="anchor" aria-label="anchor" href="#follow-a-request-and-response"></a>
+</h2>
+<hr class="half-width">
+<p><strong>HTTP</strong> is a protocol: rules for requests and responses
+between clients and servers. <strong>HTTPS</strong> protects that
+communication in transit using encryption and server identity checks.
+Our loopback teaching example uses HTTP locally.</p>
+<p>Consider this address:</p>
+<pre class="text"><code>http://127.0.0.1:8000/api/activities
+|      |         |    |
+scheme host      port path</code></pre>
+<p><code>127.0.0.1</code> is a loopback address: this computer.
+<code>localhost</code> is a name commonly used for a loopback address.
+Keep using the same address and port during the exercises, because
+browser storage is associated with the page’s <strong>origin</strong>
+(scheme, host, and port). <code>localhost</code> and
+<code>127.0.0.1</code> are different hosts to the browser.</p>
+<p>A <strong>route</strong> connects a request’s method and path to
+server behaviour. An <strong>API</strong> is an agreed interface through
+which software requests operations. Our small HTTP API has these
+routes:</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Method and path</th>
+<th>Meaning in this app</th>
+<th>Successful response</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>GET /api/activities</code></td>
+<td>Retrieve activity records</td>
+<td>
+<code>200</code> and a JSON array</td>
+</tr>
+<tr>
+<td><code>POST /api/activities</code></td>
+<td>Submit a new activity</td>
+<td>
+<code>201</code> and the saved JSON record</td>
+</tr>
+</tbody>
+</table>
+<p>The names and meanings of these routes are choices made by this
+application. Not every API has these paths, and not every API is
+accessed over HTTP.</p>
+<div class="section level3">
+<h3 id="read-a-request">Read a request<a class="anchor" aria-label="anchor" href="#read-a-request"></a>
+</h3>
+<pre class="http"><code>POST /api/activities HTTP/1.1
+Content-Type: application/json
+
+{"activity": "Read methods", "hours": 1.5}</code></pre>
+<p>The <strong>method</strong> describes the requested operation.
+<strong>Headers</strong> describe aspects of the message;
+<code>Content-Type</code> identifies the representation of its
+<strong>body</strong>. Here the body is JSON, connecting to Topic 3. The
+browser sends a number for hours, not the string <code>"1.5"</code>.</p>
+<p>An illustrative response is:</p>
+<pre class="http"><code>HTTP/1.0 201 Created
+Content-Type: application/json; charset=utf-8
+
+{"id": 104, "activity": "Read methods", "hours": 1.5, "completed": false}</code></pre>
+<p>The new ID depends on existing records; do not expect 104 if you have
+already added activities. The server assigns the ID and sets new records
+to incomplete.</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Status</th>
+<th>Interpretation</th>
+<th>In the supplied app?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>200 OK</code></td>
+<td>Request succeeded</td>
+<td>Yes, loading records</td>
+</tr>
+<tr>
+<td><code>201 Created</code></td>
+<td>New resource created</td>
+<td>Yes, saving a valid record</td>
+</tr>
+<tr>
+<td><code>400 Bad Request</code></td>
+<td>Submitted request is invalid</td>
+<td>Yes, failed validation</td>
+</tr>
+<tr>
+<td><code>404 Not Found</code></td>
+<td>No resource at that address</td>
+<td>Yes, an unknown route</td>
+</tr>
+<tr>
+<td><code>500 Internal Server Error</code></td>
+<td>Server encountered an unexpected problem</td>
+<td>General example; no deliberate 500 exercise</td>
+</tr>
+</tbody>
+</table>
+<p>An HTTP failure response still means a server responded. A connection
+failure may produce no HTTP status because no response arrived. Also,
+browser <code>fetch</code> does not treat every error status as a thrown
+exception: code must check the response status. The supplied front end
+checks <code>response.ok</code>.</p>
+<div id="inspect-the-exchange-15-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="inspect-the-exchange-15-minutes" class="callout-inner">
+<h3 class="callout-title">Inspect the exchange (15 minutes)</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li>Open the activity tracker. Open browser developer tools using the
+browser’s menu (often <strong>More tools</strong> or <strong>Web
+Developer</strong>), then select <strong>Network</strong>.</li>
+<li>Select the Fetch/XHR filter if available. Clear existing requests,
+then click <strong>Reload list</strong>. Select the request whose path
+is <code>/api/activities</code>.</li>
+<li>Record its method, status, and one response record.</li>
+<li>Enter <code>Read methods</code> and <code>1.5</code>, then click
+<strong>Save activity</strong>.</li>
+<li>Identify the POST and the following GET. Inspect the submitted
+payload and saved record. What extra fields did the server supply?</li>
+</ol>
+<p>Use the <a href="worksheet.html">worksheet</a>. If developer tools
+are unavailable, use <a href="request-transcripts.html">request
+transcripts</a>. Menu labels vary; the method, path, status, payload,
+and response are the important evidence.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<p>Reload produces GET, status 200, and an array. Save produces POST
+with activity and numeric hours; status 201 returns an ID and
+<code>completed: false</code> alongside the submitted values. The
+following GET retrieves the updated array. The browser uses that array
+to redraw the list. Requests for HTML, CSS, and JavaScript are different
+from these requests for records.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="why-validate-on-the-server-too">Why validate on the server too?<a class="anchor" aria-label="anchor" href="#why-validate-on-the-server-too"></a>
+</h3>
+<p>A browser can help people fill out a form, but another client can
+send requests without using that form. The server must enforce its own
+data and access rules.</p>
+<p>The supplied form checks required fields and numeric limits. Spaces
+satisfy the browser’s “required text” check, so the server also checks
+that the trimmed description is non-empty. This is the same validation
+idea we studied in Topic 2.</p>
+<div id="observe-a-rejected-request-10-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="observe-a-rejected-request-10-minutes" class="callout-inner">
+<h3 class="callout-title">Observe a rejected request (10 minutes)</h3>
+<div class="callout-content">
+<p>Enter three spaces for Activity and <code>1</code> for Hours, then
+save. Record the POST status, response message, visible message, and
+whether the list gains a record. Click Reload list to check the stored
+records.</p>
+<p>Explain why a disabled Save button or hidden form would not be enough
+to enforce a rule on the server. If you cannot run the example, use
+transcript B.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+<p>The POST returns 400 and
+<code>{"error": "Enter an activity description."}</code>. The front end
+displays a request-failed message. No new record is saved; reloading
+confirms it is absent. Other clients can submit directly, so browser
+controls cannot replace server validation or access checks.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="locate-state-and-persistent-storage">3. Locate state and persistent storage<a class="anchor" aria-label="anchor" href="#locate-state-and-persistent-storage"></a>
+</h2>
+<hr class="half-width">
+<p>Recall Topic 1’s distinction between current <strong>state</strong>
+and <strong>persistence</strong>. Information can exist in several
+places at once:</p>
+<table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr>
+<th>Place</th>
+<th>Example</th>
+<th>What happens on refresh?</th>
+<th>Visible to a separate browser?</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Browser memory</td>
+<td>JavaScript’s current array</td>
+<td>Recreated as the page loads</td>
+<td>No, by itself</td>
+</tr>
+<tr>
+<td>Browser storage</td>
+<td>Task manager’s <code>localStorage</code>
+</td>
+<td>Normally available to reload at the same origin</td>
+<td>No, not automatically</td>
+</tr>
+<tr>
+<td>Server memory</td>
+<td>An unsaved list held by a server process</td>
+<td>Depends on server, not page refresh</td>
+<td>Potentially, while server runs</td>
+</tr>
+<tr>
+<td>Server database file</td>
+<td>Activity tracker’s SQLite records</td>
+<td>Available through another request</td>
+<td>Yes, if that browser can reach this server and access is
+permitted</td>
+</tr>
+</tbody>
+</table>
+<p>Browser storage can outlive closing a normal browser window, but
+people can clear it, browsers can restrict it, and private browsing has
+different lifetime rules. It is not a backup or a shared team
+database.</p>
+<p>Our SQLite file persists after stopping and restarting the server
+<strong>when we use the same database file</strong>. Switching files
+produces a different set of records. A persistent file also needs
+suitable storage and backups in a real deployment; some hosting
+environments discard local files when an instance is replaced.</p>
+<p>The database is a source of stored records. The browser’s displayed
+list is a view of records it last retrieved. They can temporarily
+disagree.</p>
+<div id="predict-then-test-persistence-12-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="predict-then-test-persistence-12-minutes" class="callout-inner">
+<h3 class="callout-title">Predict, then test persistence (12
+minutes)</h3>
+<div class="callout-content">
+<p>Add a distinctive task in the task-manager starter and a distinctive
+activity in the tracker. Keep the same <code>127.0.0.1</code> URL and
+port throughout.</p>
+<p>Predict before each test, then record what you see:</p>
+<ol style="list-style-type: decimal">
+<li>Refresh both pages.</li>
+<li>Open the same two URLs in a separate browser or a separate browser
+profile on this laptop. A second tab in the same profile is not a
+separate browser.</li>
+<li>Stop the server with Ctrl+C and restart using the same command and
+database. Return to the original browser and refresh both pages.</li>
+</ol>
+<p>Do not close private windows if they hold practice data you still
+need. If only one browser is available, use the expected-observations
+table in the solution.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div class="accordion-body">
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Test</th>
+<th>Task manager</th>
+<th>Activity tracker</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Refresh</td>
+<td>Task reloaded from this browser’s storage</td>
+<td>Activity retrieved from database</td>
+</tr>
+<tr>
+<td>Separate browser/profile</td>
+<td>Original browser’s task absent</td>
+<td>Saved activity retrieved from same server</td>
+</tr>
+<tr>
+<td>Server restart, original browser</td>
+<td>Task remains in browser storage</td>
+<td>Activity remains in same database file</td>
+</tr>
+</tbody>
+</table>
+<p>The server is needed to reload the task-manager code, but does not
+store its tasks. These observations establish access from another
+browser on this laptop; they do not establish access from a colleague’s
+computer. On their computer, <code>127.0.0.1</code> refers to their own
+machine.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="diagnose-by-following-evidence">Diagnose by following evidence<a class="anchor" aria-label="anchor" href="#diagnose-by-following-evidence"></a>
+</h3>
+<p>Before asking an AI to change code, identify the last step supported
+by evidence.</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Observation</th>
+<th>Next useful evidence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>No request follows clicking Save</td>
+<td>Browser event handling, form validation, console messages</td>
+</tr>
+<tr>
+<td>Request receives 400</td>
+<td>Submitted values and server validation response</td>
+</tr>
+<tr>
+<td>Save receives 201 but new row is absent</td>
+<td>Follow-up GET response and display update</td>
+</tr>
+<tr>
+<td>Reload receives no response</td>
+<td>Server process, address, port, connection evidence</td>
+</tr>
+<tr>
+<td>Data disappears after server restart</td>
+<td>Database path and whether the same file is in use</td>
+</tr>
+</tbody>
+</table>
+<p>A 201 response is a claim by the server. In this supplied server it
+follows a database commit; in another generated system, inspect or test
+the implementation before assuming the same guarantee.</p>
+<div id="separate-save-load-and-display-failures-8-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="separate-save-load-and-display-failures-8-minutes" class="callout-inner">
+<h3 class="callout-title">Separate save, load, and display failures (8
+minutes)</h3>
+<div class="callout-content">
+<p>These are prepared scenarios; do not introduce them into your working
+files.</p>
+<p><strong>A:</strong> A save returns 201. A later GET includes the new
+record, but the page does not show it.</p>
+<p><strong>B:</strong> A save returns 400 with a validation message. A
+later GET excludes it.</p>
+<p><strong>C:</strong> The list worked earlier. After the instructor
+stops the server, clicking Reload list fails without an HTTP
+response.</p>
+<p>For each, identify the most useful next investigation and write one
+sentence you could give an AI assistant. If time allows, observe C live
+and restart the server afterwards. Do not assume these scenarios all
+have the same cause.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
+<p>A: inspect front-end rendering and its input; the retrieval response
+contains the record. “The POST succeeds and the GET includes record 104,
+but rendering omits it; inspect the list-update code using these
+responses.”</p>
+<p>B: inspect the submitted payload against the agreed validation rules.
+“The POST returns 400; explain which supplied value violates the rule
+before changing it.”</p>
+<p>C: check and restart the server, then retry. “No response arrives at
+this address; verify that the server is running on the expected port
+before changing the app.”</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="specify-access-and-sharing">4. Specify access and sharing<a class="anchor" aria-label="anchor" href="#specify-access-and-sharing"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="authentication-and-authorisation-answer-different-questions">Authentication and authorisation answer different questions<a class="anchor" aria-label="anchor" href="#authentication-and-authorisation-answer-different-questions"></a>
+</h3>
+<p><strong>Authentication</strong> establishes who a user is.
+<strong>Authorisation</strong> determines what that user may do. Being
+signed in does not imply permission to edit every record. Showing or
+hiding a button improves the interface, but the server must check
+permission before carrying out protected operations.</p>
+<p>Our local activity tracker deliberately has <strong>no accounts or
+access controls</strong>. Any client that can reach it can read and add
+records. It demonstrates data flow, not a ready-made private team
+service. The following access examples are design scenarios, not
+features implemented by the supplied server.</p>
+<div id="decide-access-before-implementation-5-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="decide-access-before-implementation-5-minutes" class="callout-inner">
+<h3 class="callout-title">Decide access before implementation (5
+minutes)</h3>
+<div class="callout-content">
+<p>A future shared tracker has these rules: viewers can read records;
+contributors can read and add records; only an administrator can delete
+records.</p>
+<ol style="list-style-type: decimal">
+<li>A signed-in viewer requests a deletion. Is authentication or
+authorisation the missing permission?</li>
+<li>A contributor hides a Delete button in their browser. Has the
+server’s deletion rule been enforced?</li>
+<li>Where should the final permission check happen?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
+</button>
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>The viewer is authenticated but is not authorised to delete.</li>
+<li>No; browser appearance is not a server access rule.</li>
+<li>On the server, before deleting. This design also needs a way to
+establish identity and associate it with a role; simply accepting a role
+supplied by a browser would not establish permission.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="localhost-domains-hosting-and-deployment">Localhost, domains, hosting, and deployment<a class="anchor" aria-label="anchor" href="#localhost-domains-hosting-and-deployment"></a>
+</h3>
+<p>A <strong>domain name</strong>, such as
+<code>tracker.example.org</code>, is a human-readable name that can be
+resolved to a network address. <strong>Hosting</strong> provides the
+computing and network resources that run and serve an application.
+<strong>Deployment</strong> places a chosen version, dependencies, and
+configuration into that environment.</p>
+<p>A domain name does not itself provide a running application,
+persistence, or access control. Uploading code to a repository does not
+automatically provide a running back end either. A static hosting
+service can serve a browser-only app; a server-backed app additionally
+needs somewhere to run its back end and keep its data. The supplied
+Python teaching server listens only on this laptop and is not a
+production deployment recipe.</p>
+<p>Ask these questions when changing “an app for me” into “an app for
+our team”:</p>
+<ul>
+<li>Who needs access, from which computers, and what may each person
+do?</li>
+<li>Which records must be shared and persist, and where will they be
+stored?</li>
+<li>Which checks and credentials must remain on the server?</li>
+<li>What should happen when saving or loading fails?</li>
+<li>Who will host, update, and back up the application?</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="turn-requirements-into-checks">Turn requirements into checks<a class="anchor" aria-label="anchor" href="#turn-requirements-into-checks"></a>
+</h3>
+<p>Compare:</p>
+<blockquote>
+<p>Build a dashboard for our activities.</p>
+</blockquote>
+<p>with:</p>
+<blockquote>
+<p>Propose a small shared research-activity tracker before implementing
+it. Contributors can add activities with a meaningful description and
+numeric hours greater than 0 and at most 24. Viewers can read but cannot
+add records. Enforce data and access rules on the server. Save accepted
+records in persistent storage; they must remain after restarting the
+back end. Show a clear failure message if saving fails, and preserve the
+entered values for retry. Explain the browser, server, storage,
+identity, and hosting choices. Give checks from two browser profiles,
+including rejected input and denied access. Identify assumptions before
+writing code.</p>
+</blockquote>
+<p>The role and hosting requirements extend our demonstration. An AI
+should explain those missing parts rather than claim the local demo
+already satisfies them.</p>
+<div id="final-challenge-specify-and-assess-an-app-15-minutes" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="final-challenge-specify-and-assess-an-app-15-minutes" class="callout-inner">
+<h3 class="callout-title">Final challenge: specify and assess an app (15
+minutes)</h3>
+<div class="callout-content">
+<p>Work alone first, then exchange plans with a partner. For a shared
+reading-list or research-activity tracker:</p>
+<ol style="list-style-type: decimal">
+<li>Draw browser, server, and storage, labelling the data
+exchanged.</li>
+<li>Define inputs and validation rules. Use Topic 3’s fields and types
+if helpful.</li>
+<li>Describe who can read and who can change records.</li>
+<li>Say what must survive a refresh, a server restart, and access from
+another authorised browser.</li>
+<li>Specify the visible result of success and of a failed save.</li>
+<li>Write three acceptance checks, including one failure case.</li>
+</ol>
+<p>Then write a request to an AI assistant that includes those
+decisions. You do not need to generate or deploy the whole application
+to complete this challenge. During the separate practice period, an
+instructor may demonstrate one small change after reviewing its scope
+with the group.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
+  <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
+</button>
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div class="accordion-body">
+<p>One possible plan uses a browser form, a server API with server-side
+validation and permission checks, and a persistent database. A real
+identity mechanism establishes whether a user is a viewer or
+contributor. The browser receives records it may display; private
+credentials remain on the server.</p>
+<p>Example checks:</p>
+<ol style="list-style-type: decimal">
+<li>A contributor saves a valid record. Its returned ID can be found
+after a server restart and from another authorised browser.</li>
+<li>A spaces-only description is rejected by the server without changing
+the database; the user sees a useful message.</li>
+<li>A viewer’s direct add request is denied by the server, even if the
+browser interface is modified. No record is added.</li>
+</ol>
+<p>An additional failure check stops the server before a save. The page
+should report failure, preserve input for retry, and avoid claiming the
+record was saved. The supplied demonstration already preserves the form
+on a failed POST, but does not implement the roles in this proposed
+plan.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Delivery notes </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Use the four timing blocks above, with a break after request
+inspection. The challenge allocations include feedback. Keep the server
+running for both examples; restarting with the same database must
+preserve added records.</p>
+<p>Demonstrate developer tools slowly, enlarge their text, and name the
+selected request before switching panels. Accept the request transcripts
+as equivalent evidence for learners who cannot use developer tools. No
+SQL, framework setup, public hosting account, or authentication
+implementation is required.</p>
+<p>Watch for: the browser is the whole app; a success message proves
+saving; localStorage is shared; refreshing restarts the server; a
+database must run on a separate machine; a domain provides hosting;
+hiding a button authorises access.</p>
+<p>The final challenge is a design assessment. Keep deployment and full
+login implementation as extensions. During the daily reflection, ask
+learners to explain the journey from clicking Save to the displayed
+result in their own words. See the <a href="instructor-notes.html">shared instructor notes</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Browser, server, and database have distinct responsibilities, even
+on one laptop.</li>
+<li>HTTP requests have methods, addresses, headers, and sometimes a
+body; responses include statuses and data.</li>
+<li>Saving, retrieving, and displaying records are separate steps that
+need separate evidence.</li>
+<li>Browser storage is local to a browser and origin; shared data
+requires an appropriate shared service.</li>
+<li>Authentication establishes identity; authorisation controls allowed
+actions on the server.</li>
+<li>A shared-app specification includes validation, persistence, access,
+failure behaviour, and hosting assumptions.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="further-reading">Further reading<a class="anchor" aria-label="anchor" href="#further-reading"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview" class="external-link">MDN:
+HTTP overview</a>.</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" class="external-link">MDN:
+Using Fetch</a>.</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" class="external-link">MDN:
+Browser localStorage</a>.</li>
+</ul>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ --></section></section>
 </div>
     </main>
 </div>
@@ -1771,8 +3654,8 @@ any links that you are not going to use.
   "url": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/aio.html",
   "identifier": "https://gvbhalerao591.github.io/programming-for-vibe-coding/instructor/aio.html",
   "dateCreated": "2026-10-27",
-  "dateModified": "2026-11-10",
-  "datePublished": "2026-11-10"
+  "dateModified": "2026-11-16",
+  "datePublished": "2026-11-16"
 }
 
   </script><script>
